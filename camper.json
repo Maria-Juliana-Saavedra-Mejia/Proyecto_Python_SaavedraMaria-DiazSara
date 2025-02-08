@@ -1,336 +1,234 @@
 {
-    "informacion":[
-      {
-        "Id": "",
-        "Nombre completo": "Carmen Sofia Alvarez Gomez",
-        "Direccion": "Cra 34 ·45-03",
-        "Acudiente": "Adriana Rodriguez",
-        "Numero de celular": 3167475434,
-        "Numero de telefono fijo": 6179876543,
-        "Estado": "Inscrito",
-        "Riesgo ": ""
+  "informacion": [
+    {
+      "Id": "1023456789",
+      "Nombre completo": "Carmen Sofia Alvarez Gomez",
+      "Direccion": "Cra 34 #45-03",
+      "Acudiente": "Adriana Rodriguez",
+      "Numero de celular": 3167475434,
+      "Numero de telefono fijo": 6179876543,
+      "Estado": "Aprobado",
+      "Riesgo": ""
       },
       {
-        "Id": "",
+        "Id": "1122334455",
         "Nombre completo": "Luisa Sofia Mantilla Gomez",
-        "Direccion": "Cra 34 ·45-03",
+        "Direccion": "Cra 34 #45-03",
         "Acudiente": "Adriana Rodriguez",
         "Numero de celular": 3426786564,
         "Numero de telefono fijo": 61454674,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo alto"
+        "Estado": "Inscrito",
+        "Riesgo": ""
       },
       {
-        "Id": "",
-        "Nombre completo": "Luisa Sofia Mantilla Gomez",
-        "Direccion": "Cra 34 ·45-03",
+        "Id": "1234567890",
+        "Nombre completo": "Maria Juliana Saavedra Mejia",
+        "Direccion": "Cra 34 #45-03",
         "Acudiente": "Adriana Rodriguez",
         "Numero de celular": 345234536,
         "Numero de telefono fijo": 317558435,
-        "Estado": "Retirado",
-        "Riesgo ": ""
+        "Estado": "Retirado"
+
       },
       {
-        "Id": "",
-        "Nombre completo": "Carlos Alberto Ruiz Sanchez",
-        "Direccion": "Cra 56 ·12-67",
-        "Acudiente": "Mariana Sanchez",
-        "Numero de celular": 3219876543,
-        "Numero de telefono fijo": 62033445,
-        "Estado": "Inscrito",
-        "Riesgo ": ""
+          "Id": "1029384756",
+          "Nombre completo": "Carlos Alberto Ruiz Sanchez",
+          "Direccion": "Cra 56 #12-67",
+          "Acudiente": "Mariana Sanchez",
+          "Numero de celular": 3219876543,
+          "Numero de telefono fijo": 62033445,
+          "Estado": "En proceso",
+          "Riesgo": ""
       },
       {
-        "Id": "",
-        "Nombre completo": "Ana Maria Lopez Torres",
-        "Direccion": "Cra 76 ·21-89",
-        "Acudiente": "Felipe Lopez",
-        "Numero de celular": 3201234567,
-        "Numero de telefono fijo": 62778899,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo bajo"
+          "Id": "1092837465",
+          "Nombre completo": "Ana Maria Lopez Torres",
+          "Direccion": "Cra 76 #21-89",
+          "Acudiente": "Felipe Lopez",
+          "Numero de celular": 3201234567,
+          "Numero de telefono fijo": 62778899,
+          "Estado": "Rechazado por prueba de ingreso",
+          "Riesgo": ""
       },
       {
-        "Id": "",
-        "Nombre completo": "Javier Antonio Perez Ramírez",
-        "Direccion": "Cra 11 ·43-56",
-        "Acudiente": "Beatriz Ramírez",
-        "Numero de celular": 3145678901,
-        "Numero de telefono fijo": 61223344,
-        "Estado": "Retirado",
-        "Riesgo ": ""
+          "Id": "1010101010",
+          "Nombre completo": "Javier Antonio Perez Ramírez",
+          "Direccion": "Cra 11 #43-56",
+          "Acudiente": "Beatriz Ramírez",
+          "Numero de celular": 3145678901,
+          "Numero de telefono fijo": 61223344,
+          "Estado": "Cursando",
+          "Riesgo": ""
       },
       {
-        "Id": "",
-        "Nombre completo": "Mariana Isabel Garcia Soto",
-        "Direccion": "Cra 89 ·90-01",
-        "Acudiente": "Carlos Soto",
-        "Numero de celular": 3112233445,
-        "Numero de telefono fijo": 62345678,
-        "Estado": "Graduado",
-        "Riesgo ": ""
+          "Id": "1045678912",
+          "Nombre completo": "Mariana Isabel Garcia Soto",
+          "Direccion": "Cra 89 #90-01",
+          "Acudiente": "Carlos Soto",
+          "Numero de celular": 3112233445,
+          "Numero de telefono fijo": 62345678,
+          "Estado": "Graduado",
+          "Riesgo": ""
       },
       {
-        "Id": "",
-        "Nombre completo": "Ricardo Andrés Martínez Delgado",
-        "Direccion": "Cra 45 ·67-89",
-        "Acudiente": "Sandra Martínez",
-        "Numero de celular": 3009876543,
-        "Numero de telefono fijo": 63456789,
-        "Estado": "En proceso",
-        "Riesgo ": ""
+          "Id": "1076543210",
+          "Nombre completo": "Ricardo Andrés Martínez Delgado",
+          "Direccion": "Cra 45 #67-89",
+          "Acudiente": "Sandra Martínez",
+          "Numero de celular": 3009876543,
+          "Numero de telefono fijo": 63456789,
+          "Estado": "Expulsado",
+          "Riesgo": ""
       },
       {
-        "Id": "",
-        "Nombre completo": "Gabriela Cecilia Ríos Pérez",
-        "Direccion": "Cra 22 ·55-66",
-        "Acudiente": "Ramón Ríos",
-        "Numero de celular": 3134567890,
-        "Numero de telefono fijo": 61543210,
-        "Estado": "Expulsado",
-        "Riesgo ": ""
+          "Id": "1122334456",
+          "Nombre completo": "Gabriela Cecilia Ríos Pérez",
+          "Direccion": "Cra 22 ·55-66",
+          "Acudiente": "Ramón Ríos",
+          "Numero de celular": 3134567890,
+          "Numero de telefono fijo": 61543210,
+          "Estado": "Expulsado",
+          "Riesgo": ""
       },
       {
-        "Id": "",
-        "Nombre completo": "Felipe Javier Gómez Torres",
-        "Direccion": "Cra 99 ·11-22",
-        "Acudiente": "Laura Gómez",
-        "Numero de celular": 3101234567,
-        "Numero de telefono fijo": 62334455,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo bajo"
-      },
-  
-      {
-        "Id": "",
-        "Nombre completo": "Miguel Ángel Fernández Gómez",
-        "Direccion": "Cra 50 ·12-23",
-        "Acudiente": "Laura Gómez",
-        "Numero de celular": 3123456789,
-        "Numero de telefono fijo": 62876543,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo bajo"
+          "Id": "1144556677",
+          "Nombre completo": "Felipe Javier Gómez Torres",
+          "Direccion": "Cra 99 ·11-22",
+          "Acudiente": "Laura Gómez",
+          "Numero de celular": 3101234567,
+          "Numero de telefono fijo": 62334455,
+          "Estado": "Cursando",
+          "Riesgo": "Riesgo bajo"
       },
       {
-        "Id": "",
-        "Nombre completo": "Andrea Paola Ruiz Castro",
-        "Direccion": "Cra 34 ·44-56",
-        "Acudiente": "Carlos Ruiz",
-        "Numero de celular": 3178765432,
-        "Numero de telefono fijo": 62345678,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo alto"
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Jorge Alberto Martínez Gómez",
-        "Direccion": "Cra 22 ·11-33",
-        "Acudiente": "Sofia Martínez",
-        "Numero de celular": 3187654321,
-        "Numero de telefono fijo": 62987654,
-        "Estado": "Expulsado",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Isabel Cristina Torres Ruiz",
-        "Direccion": "Cra 88 ·77-99",
-        "Acudiente": "Ramón Ruiz",
-        "Numero de celular": 3198765432,
-        "Numero de telefono fijo": 63334455,
-        "Estado": "Graduado",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Andrés Felipe González Soto",
-        "Direccion": "Cra 12 ·65-78",
-        "Acudiente": "Patricia Soto",
-        "Numero de celular": 3009876543,
-        "Numero de telefono fijo": 63123456,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo bajo"
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Carolina María Ramírez Vargas",
-        "Direccion": "Cra 47 ·54-32",
-        "Acudiente": "Carlos Ramírez",
-        "Numero de celular": 3145678901,
-        "Numero de telefono fijo": 62678901,
-        "Estado": "En proceso",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Felipe Alfonso Gómez Hernández",
-        "Direccion": "Cra 55 ·98-12",
-        "Acudiente": "Marta Hernández",
-        "Numero de celular": 3203456789,
-        "Numero de telefono fijo": 61234567,
-        "Estado": "Retirado",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Laura Isabel Herrera Castro",
-        "Direccion": "Cra 77 ·23-45",
-        "Acudiente": "Eduardo Herrera",
-        "Numero de celular": 3111234567,
-        "Numero de telefono fijo": 62987654,
-        "Estado": "Inscrito",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Oscar Andrés Pérez Gómez",
-        "Direccion": "Cra 31 ·11-22",
-        "Acudiente": "Liliana Gómez",
-        "Numero de celular": 3154321098,
-        "Numero de telefono fijo": 63098765,
-        "Estado": "Expulsado",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "María Fernanda Rodríguez López",
-        "Direccion": "Cra 90 ·43-56",
-        "Acudiente": "Carlos Rodríguez",
-        "Numero de celular": 3005678901,
-        "Numero de telefono fijo": 62678912,
-        "Estado": "Graduado",
-        "Riesgo ": ""
-      },
-  
-      {
-        "Id": "",
-        "Nombre completo": "Esteban Alejandro Díaz Gómez",
-        "Direccion": "Cra 12 ·45-67",
-        "Acudiente": "Sandra Gómez",
-        "Numero de celular": 3102345678,
-        "Numero de telefono fijo": 62457890,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo alto"
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Beatriz Elena Martínez Pérez",
-        "Direccion": "Cra 55 ·11-22",
-        "Acudiente": "Carlos Martínez",
-        "Numero de celular": 3139876543,
-        "Numero de telefono fijo": 63789012,
-        "Estado": "Expulsado",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Carlos Alberto Romero Castro",
-        "Direccion": "Cra 99 ·23-45",
-        "Acudiente": "Lucía Romero",
-        "Numero de celular": 3143456789,
-        "Numero de telefono fijo": 63547689,
-        "Estado": "Graduado",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Sofía Alejandra Torres Rodríguez",
-        "Direccion": "Cra 33 ·54-76",
-        "Acudiente": "Eduardo Torres",
-        "Numero de celular": 3178765432,
-        "Numero de telefono fijo": 62987650,
-        "Estado": "Retirado",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Luis Fernando López Sánchez",
-        "Direccion": "Cra 44 ·76-89",
-        "Acudiente": "Gloria Sánchez",
-        "Numero de celular": 3192345678,
-        "Numero de telefono fijo": 63214567,
-        "Estado": "En proceso",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Mónica Beatriz Hernández Morales",
-        "Direccion": "Cra 22 ·34-56",
-        "Acudiente": "José Hernández",
-        "Numero de celular": 3159876543,
-        "Numero de telefono fijo": 62345678,
-        "Estado": "Inscrito",
-        "Riesgo ": ""
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Juan Manuel Ramírez Díaz",
-        "Direccion": "Cra 58 ·89-01",
-        "Acudiente": "Margarita Ramírez",
-        "Numero de celular": 3203456789,
-        "Numero de telefono fijo": 63456789,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo bajo"
-      },
-      {
-        "Id": "",
-        "Nombre completo": "Lorena Isabel Vargas Soto",
-        "Direccion": "Cra 67 ·12-34",
-        "Acudiente": "Felipe Vargas",
-        "Numero de celular": 3118765432,
-        "Numero de telefono fijo": 62976543,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo medio"
-      },
-      {
-        "id": "",
-        "Nombre completo": "Ricardo Andrés Pérez González",
-        "Direccion": "Cra 21 ·65-43",
-        "Acudiente": "Estela González",
-        "Numero de celular": 3121234567,
-        "Numero de telefono fijo": 62654321,
-        "Estado": "Graduado",
-        "Riesgo ": ""
-      },
-      {
-        "id": "",
-        "Nombre completo": "Adriana Carolina Morales Fernández",
-        "Direccion": "Cra 19 ·43-56",
-        "Acudiente": "Fernando Morales",
-        "Numero de celular": 3187654321,
-        "Numero de telefono fijo": 63344456,
-        "Estado": "Cursando",
-        "Riesgo ": "Riesgo bajo"
-      },
-      {
-        "id": "",
-        "Nombre completo": "",
-        "Direccion": "",
-        "Acudiente": "",
-        "Numero de celular": "",
-        "Numero de telefono fijo": "",
-        "Estado": "",
-        "Riesgo ": ""
-      },
-      {
-        "id": "",
-        "Nombre completo": "",
-        "Direccion": "",
-        "Acudiente": "",
-        "Numero de celular": "",
-        "Numero de telefono fijo": "",
-        "Estado": "",
-        "Riesgo ": ""
-      },
-      {
-        "id": "",
-        "Nombre completo": "",
-        "Direccion": "",
-        "Acudiente": "",
-        "Numero de celular": "",
-        "Numero de telefono fijo": "",
-        "Estado": "",
-        "Riesgo ": ""
+            "Id": "1009876543",
+            "Nombre completo": "Fernando Andrés Quintero López",
+            "Direccion": "Cra 15 ·32-21",
+            "Acudiente": "Martha López",
+            "Numero de celular": 3117654321,
+            "Numero de telefono fijo": 61543210,
+            "Estado": "Cursando",
+            "Riesgo": "Riesgo medio"
+        },
+        {
+            "Id": "1018765432",
+            "Nombre completo": "Andrea Marcela Castillo Pérez",
+            "Direccion": "Cra 27 ·54-78",
+            "Acudiente": "Luis Castillo",
+            "Numero de celular": 3129876543,
+            "Numero de telefono fijo": 61678901,
+            "Estado": "Graduado",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1027654321",
+            "Nombre completo": "Jorge Enrique Rojas Vargas",
+            "Direccion": "Cra 48 ·98-45",
+            "Acudiente": "Sandra Vargas",
+            "Numero de celular": 3138765432,
+            "Numero de telefono fijo": 61765432,
+            "Estado": "Retirado",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1036543210",
+            "Nombre completo": "Mariana Isabel Suárez González",
+            "Direccion": "Cra 33 ·65-32",
+            "Acudiente": "Carlos Suárez",
+            "Numero de celular": 3147654321,
+            "Numero de telefono fijo": 61876543,
+            "Estado": "Inscrito",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1045432109",
+            "Nombre completo": "David Alejandro Martínez Ramírez",
+            "Direccion": "Cra 50 ·23-12",
+            "Acudiente": "Elena Ramírez",
+            "Numero de celular": 3159871234,
+            "Numero de telefono fijo": 61987654,
+            "Estado": "Expulsado",
+            "Riesgo": "Riesgo alto"
+        },
+        {
+            "Id": "1054321098",
+            "Nombre completo": "Natalia Beatriz Gutiérrez Ospina",
+            "Direccion": "Cra 62 ·45-78",
+            "Acudiente": "Roberto Ospina",
+            "Numero de celular": 3168765432,
+            "Numero de telefono fijo": 62098765,
+            "Estado": "Cursando",
+            "Riesgo": "Riesgo bajo"
+        },
+        {
+            "Id": "1063210987",
+            "Nombre completo": "Oscar Andrés Salazar Muñoz",
+            "Direccion": "Cra 18 ·98-12",
+            "Acudiente": "Paola Muñoz",
+            "Numero de celular": 3179876543,
+            "Numero de telefono fijo": 62109876,
+            "Estado": "En proceso",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1072109876",
+            "Nombre completo": "Patricia Juliana Herrera Mendoza",
+            "Direccion": "Cra 77 ·65-34",
+            "Acudiente": "Luis Mendoza",
+            "Numero de celular": 3187654321,
+            "Numero de telefono fijo": 62210987,
+            "Estado": "Graduado",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1081098765",
+            "Nombre completo": "Carlos Alberto Rivera Rodríguez",
+            "Direccion": "Cra 40 ·87-23",
+            "Acudiente": "Ana Rodríguez",
+            "Numero de celular": 3198765432,
+            "Numero de telefono fijo": 62321098,
+            "Estado": "Retirado",
+            "Riesgo": "Riesgo medio"
+        },
+        {
+            "Id": "1090987654",
+            "Nombre completo": "Laura Fernanda Cárdenas Pineda",
+            "Direccion": "Cra 29 ·54-12",
+            "Acudiente": "Javier Pineda",
+            "Numero de celular": 3209876543,
+            "Numero de telefono fijo": 62432109,
+            "Estado": "Cursando",
+            "Riesgo": "Riesgo bajo"
+        }, 
+        {
+          "id": "",
+          "Nombre completo": "",
+          "Direccion": "",
+          "Acudiente": "",
+          "Numero de celular": "",
+          "Numero de telefono fijo": "",
+          "Estado": "",
+          "Riesgo ": ""
+        },
+        {
+          "id": "",
+          "Nombre completo": "",
+          "Direccion": "",
+          "Acudiente": "",
+          "Numero de celular": "",
+          "Numero de telefono fijo": "",
+          "Estado": "",
+          "Riesgo ": ""
+        },
+        {
+          "id": "",
+          "Nombre completo": "",
+          "Direccion": "",
+          "Acudiente": "",
+          "Numero de celular": "",
+          "Numero de telefono fijo": "",
+          "Estado": "",
+          "Riesgo ": ""
       },
       {
         "id": "",

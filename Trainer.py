@@ -1,15 +1,29 @@
 from modulocamper import* 
+import json
+def abrirJSON():
+    dicFinal={}
+    with open('./camper.json','r') as openFile:
+        dicFinal=json.load(openFile)
+    return dicFinal
+
+def guardarJSON(dic):
+    with open("./camper.json",'w') as outFile:
+        json.dump(dic,outFile)
+
 print("Bienvenido al programa de campuslands")
 print("1. Camper")
 print("2. Trainer")
 print("3. Coordinador")
 opcion=int(input("Digite su opcion: "))
 camper={}
-if opcion ==1:
-    print("¿Que desea hacer?")
-    print("1. Inscripcion")
-    print("2. Ingresar al perfil")
-    opcioncam=int(input(":"))
+booleano=True
+while(booleano==True):
+    if opcion ==1:
+        print("¿Que desea hacer?")
+        print("1. Inscripcion")
+        print("2. Ingresar al perfil")
+        print("3. Salir del programa")
+        opcioncam=int(input(":"))
     if opcioncam==1:
         newcamper={}
         idn=int(input("Ingrese su nùmero de identificaciòn:"))
@@ -18,12 +32,16 @@ if opcion ==1:
         newcamper["Nombre completo"]=nombren
         direccion=input("Ingrese su direcciòn:")
         newcamper["Direccion"]=direccion
+        acudienten=input("Ingrese el nombre de su acudiente:")
+        newcamper["Acudiente"]=acudienten
         numcel=int(input("Ingrese su numero de celular:"))
-                newcamper["Numero de celular "]
-        
+        newcamper["Numero de celular "]=numcel
+        numfijo=int(input("Ingrese su numero de telefono:"))
+        newcamper["Direccion"]=numfijo
+       
              
-elif opcion==2:
-    print("Bienvenido Trainer")
+    elif opcion==2:
+     print("Bienvenido Trainer")
     n1=int(input("Digite su codigo"))
     if n1==1:
         print("Bienvenido trainer Pedro Gomez")
