@@ -1,4 +1,5 @@
 
+from defcoordinador import agregartrainers
 from deftrainer import trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, breakpoint, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1
 import json
 def abrirJSON():
@@ -10,16 +11,18 @@ def abrirJSON():
 def guardarJSON(dic):
     with open("./camper.json", 'w') as outFile:
         json.dump(dic, outFile)
+        
+camper={}
 
 print("Bienvenido al programa de campuslands")
 print("Còmo desea ingresar?")
 print("1. Camper")
 print("2. Trainer")
 print("3. Coordinador")
-
 opcion = int(input("Digite su opcion: "))
+booleanito=True
 
-while True:
+while booleanito==True:
     if opcion == 1:
         print("¿Qué desea hacer?")
         print("1. Inscripción")
@@ -31,31 +34,38 @@ while True:
             newcamper = abrirJSON()
 
             idn = int(input("Ingrese su número de identificación:"))
-            nombren = input("Ingrese su(s) nombre(s):")
-            apellidon = input("Digite sus apellidos:")
+            nombren = (input("Ingrese su(s) nombre(s):"))
+            apellidon =( input("Digite sus apellidos:"))
             direccion = input("Ingrese su dirección:")
             acudienten = input("Ingrese el nombre de su acudiente:")
             numcel = int(input("Ingrese su número de celular:"))
             numfijo = int(input("Ingrese su número de teléfono:"))
 
-            newcamper["informacion"].append({
-                "id": idn,
+            newcamper["Informacion"][idn]={
                 "Nombre": nombren,
                 "Apellido": apellidon,
                 "Direccion": direccion,
                 "Acudiente": acudienten,
                 "Numero de celular": numcel,
-                "Numero de telefono": numfijo
-            })
-
+                "Numero de telefono": numfijo,
+                "Estado": {
+                "En proceso": False,
+                "Inscrito": True,
+                "Aprovado": False,
+                "Rechazao": False,
+                "Cursando": False,
+                "Graduado": False,
+                "Expulado": False,
+                "Retirado": False
+                }}
             guardarJSON(newcamper)
-
-        elif opcioncam == 2:
+        elif opcioncam==2:
             print("Bienvenido Camper")
-            print("Ingrese su número de identificación:")
-            for (Id) in ["informacion"]:
-                if ["Estado"] == "Aprobado":
-                        print("")
+            identificacion=int (input("Digite su numero de identificacion"))
+            identificacion=abrirJSON()
+    
+          
+                        
 
     elif opcion==2:
      print("Bienvenido Trainer")
@@ -106,7 +116,7 @@ while True:
         else:
             print("Eleccion invalida")
             
-    elif n1==3:
+     elif n1==3:
         print ("Bienvenido trainer Juan Nariño")
         print("Para agregar notas a clase J_1 ingrese (1)")
         print("Para agregar notas a clase J_2 ingrese (2)")
@@ -126,7 +136,7 @@ while True:
             print("Eleccion invalida")
         
 
-    elif n1==4:
+     elif n1==4:
         print ("Bienvenido trainer Santiago Melo")
         print("Para agregar notas a clase S_1 ingrese (1)")
         print("Para agregar notas a clase S_2 ingrese (2)")
@@ -145,7 +155,7 @@ while True:
         else:
             print("Eleccion invalida")
                
-    elif n1==5:
+     elif n1==5:
         print ("Bienvenido trainer Carlos Rueda")
         print("Para agregar notas a clase S_1 ingrese (1)")
         print("Para agregar notas a clase S_2 ingrese (2)")
@@ -163,7 +173,7 @@ while True:
             breakpoint()  
         else:
             print("Eleccion invalida")
-    elif n1==6:
+     elif n1==6:
         print ("Bienvenida trainer Antonio Vega")
         print("Para agregar notas a clase A_1 ingrese (1)")
         print("Para agregar notas a clase A_2 ingrese (2)")
@@ -183,7 +193,26 @@ while True:
             print("Eleccion invalida")
     
  
-    else:
+     else:
         print("Codigo incorrecto")
         breakpoint()
+    elif opcion==3:
+        print("Bienvenido coordinador")
+        print("Que quieres hacer:")
+        print("1.Agregar trainers")
+        print("2.Eliminar ca")
+        print("2.Registrar nota campers")
+        print("3.Revisar inscripcion")
+        print("4.Mostrar campers")
+        print("5.Crear nueva ruta")
+        print("6.Modulo matriculas")
+        print("7.Modulo reportes")
+        opciontra=int(input(":"))
+        if opciontra==1:
+            agregartrainers()
+        if opciontra==2:
+           agregartrainers()
 
+        
+
+        

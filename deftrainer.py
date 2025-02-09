@@ -22,7 +22,7 @@ def trainerAgregarNotasp():
                 print("Codigo incorrecto")
 def trainerAgregarNotasp1():
             print ("Estos son los campers de la clase P_2")
-            ###imprimir la lista de esa clase con notas 
+       
             est=int(input("Digite el numero del camper al que le quiere ingresar una la nota"))
             print ("1. para trabajos")
             print ("2. para proyectos")
@@ -30,13 +30,13 @@ def trainerAgregarNotasp1():
             nota=int(input("Ingrese que nota quiere agregar: "))
             if nota==1:
                 trabajos=int(input("Digite la nota del trabajo: "))
-            ##Agregar nota a diccionario
+   
             elif nota==2:
                 proyectos=int(input("Digite la nota del proyecto: "))
-            ##Agregar nota a diccionario
+       
             elif nota==3:
                 otros=int(input("Digite la nota: "))
-            ##Agregar nota a diccionario
+     
             else:
                 print("Codigo incorrecto")
 
@@ -51,13 +51,13 @@ def trainerAgregarNotasm():
 
         if nota==1:
                 trabajos=int(input("Digite la nota del trabajo: "))
-                ##Agregar nota a diccionario
+         
         elif nota==2:
                 proyectos=int(input("Digite la nota del proyecto: "))
-                ##Agregar nota a diccionario
+         
         elif nota==3:
                 otros=int(input("Digite la nota: "))
-                ##Agregar nota a diccionario
+         
         else:
              print("Codigo incorrecto")
 
@@ -72,13 +72,13 @@ def trainerAgregarNotasm1():
       nota=int(input("Ingrese que nota quiere agregar: "))
       if nota==1:
           trabajos=int(input("Digite la nota del trabajo: "))
-          ##Agregar nota a diccionario
+   
       elif nota==2:
           proyectos=int(input("Digite la nota del proyecto: "))
-          ##Agregar nota a diccionario
+   
       elif nota==3:
           otros=int(input("Digite la nota: "))
-          ##Agregar nota a diccionario
+   
       else:
        print("Codigo incorrecto")
 
@@ -92,13 +92,13 @@ def trainerAgregarNotasJ():
             nota=int(input("Ingrese que nota quiere agregar: "))
             if nota==1:
                 trabajos=int(input("Digite la nota del trabajo: "))
-                 ##Agregar nota a diccionario
+          
             elif nota==2:
                 proyectos=int(input("Digite la nota del proyecto: "))
-                ##Agregar nota a diccionario
+         
             elif nota==3:
                  otros=int(input("Digite la nota: "))
-                ##Agregar nota a diccionario
+         
             else:
                     print("Codigo incorrecto")
      
@@ -114,13 +114,13 @@ def trainerAgregarNotasJ1():
             nota=int(input("Ingrese que nota quiere agregar: "))
             if nota==1:
                 trabajos=int(input("Digite la nota del trabajo: "))
-                ##Agregar nota a diccionario
+         
             elif nota==2:
                 proyectos=int(input("Digite la nota del proyecto: "))
-                ##Agregar nota a diccionario
+         
             elif nota==3:
                 otros=int(input("Digite la nota: "))
-                ##Agregar nota a diccionario
+         
             else:
                     print("Codigo incorrecto")
 
@@ -134,13 +134,13 @@ def trainerAgregarNotasS():
             nota=int(input("Ingrese que nota quiere agregar: "))
             if nota==1:
                 trabajos=int(input("Digite la nota del trabajo: "))
-                ##Agregar nota a diccionario
+         
             elif nota==2:
                 proyectos=int(input("Digite la nota del proyecto: "))
-                ##Agregar nota a diccionario
+         
             elif nota==3:
                 otros=int(input("Digite la nota: "))
-                ##Agregar nota a diccionario
+         
             else:
                 print("Codigo incorrecto")
 def trainerAgregarNotasS1():
@@ -153,13 +153,13 @@ def trainerAgregarNotasS1():
     nota=int(input("Ingrese que nota quiere agregar: "))
     if nota==1:
         trabajos=int(input("Digite la nota del trabajo: "))
-         ##Agregar nota a diccionario
+  
     elif nota==2:
         proyectos=int(input("Digite la nota del proyecto: "))
-         ##Agregar nota a diccionario
+  
     elif nota==3:
         otros=int(input("Digite la nota: "))
-         ##Agregar nota a diccionario
+  
     else:
         print("Codigo incorrecto")
 
@@ -173,13 +173,13 @@ def trainerAgregarNotasC():
             nota=int(input("Ingrese que nota quiere agregar: "))
             if nota==1:
                 trabajos=int(input("Digite la nota del trabajo: "))
-                ##Agregar nota a diccionario
+         
             elif nota==2:
                 proyectos=int(input("Digite la nota del proyecto: "))
-                ##Agregar nota a diccionario
+         
             elif nota==3:
                 otros=int(input("Digite la nota: "))
-                ##Agregar nota a diccionario
+         
             else:
                 print("Codigo incorrecto")
       
@@ -193,13 +193,13 @@ def trainerAgregarNotasC1():
     nota=int(input("Ingrese que nota quiere agregar: "))
     if nota==1:
         trabajos=int(input("Digite la nota del trabajo: "))
-        ##Agregar nota a diccionario
+ 
     elif nota==2:
         proyectos=int(input("Digite la nota del proyecto: "))
-        ##Agregar nota a diccionario
+ 
     elif nota==3:
         otros=int(input("Digite la nota: "))
-        ##Agregar nota a diccionario
+ 
     else:
         print("Codigo incorrecto")
 
