@@ -9,3 +9,5 @@ def guardarJSON(dic):
     with open("./camper.json",'w') as outFile:
         json.dump(dic,outFile)
 
+        
+
