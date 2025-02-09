@@ -126,12 +126,9 @@ while True:
                 ##Agregar nota a diccionario
             else:
                 print("Codigo incorrecto")
-    elif n1==6:
-        print ("Bienvenida trainer Antonio Vega")
-        print("Para agregar notas a clase A_1 ingrese (1)")
-        print("Para agregar notas a clase A_2 ingrese (2)")
-        print("Para salir digite (3)")
-        clase=int("Digite su eleccion: ")
+    elif n1==5:
+        usertrainer()
+      
         if clase==1:
             print ("Estos son los estudiantes de la clase A_1")
             ###imprimir la lista de esa clase con notas 

@@ -137,6 +137,7 @@ def usertrainer():
         print("Para agregar notas a clase P_2 ingrese (2)")
         print("Para salir digite (3)")
         clase=int("Digite su eleccion: ")
+        if clase==1:
 
     elif usertrainer==2:
         print("Bienvenido trainer Miguel Rodriguez")
@@ -144,6 +145,7 @@ def usertrainer():
         print("Para agregar notas a clase M_2 ingrese (2)")
         print("Para salir digite (3)")
         clase=int("Digite su eleccion: ")
+        if clase==2:
 
     elif usertrainer==3:
 
@@ -166,5 +168,7 @@ def usertrainer():
         print("Para agregar notas a clase A_2 ingrese (2)")
         print("Para salir digite (3)")
         clase=int("Digite su eleccion: ")
+
+
 
     
