@@ -1,132 +1,213 @@
 {
-  "informacion": [
-      {
-          "Id": "6677889900",
-          "Nombre": "Carlos Alberto",
-          "Apellido": "Garcia Vargas",
-          "Direccion": "Cra 15 #18-09",
-          "Acudiente": "Mar\u00eda Garcia",
-          "Numero de celular": 3152334455,
-          "Numero de telefono fijo": 6123456789,
-          "Estado": "Pendiente",
-          "Riesgo": "Moderado"
-      },
-      {
-          "Id": "7788990011",
-          "Nombre": "Laura Eugenia",
-          "Apellido": "Mendez Romero",
-          "Direccion": "Calle 34 #56-09",
-          "Acudiente": "Jos\u00e9 Mendez",
-          "Numero de celular": 3182445789,
-          "Numero de telefono fijo": 6173456789,
-          "Estado": "Aprobado",
-          "Riesgo": ""
-      },
-      {
-          "Id": "8899001122",
-          "Nombre": "Jorge Luis",
-          "Apellido": "P\u00e9rez Torres",
-          "Direccion": "Cra 24 #34-05",
-          "Acudiente": "Ana Torres",
-          "Numero de celular": 3105642345,
-          "Numero de telefono fijo": 6155678901,
-          "Estado": "Rechazado",
-          "Riesgo": "Alto"
-      },
-      {
-          "Id": "9900112233",
-          "Nombre": "Ana Lucia",
-          "Apellido": "Vega Lozano",
-          "Direccion": "Calle 15 #24-10",
-          "Acudiente": "Carlos Vega",
-          "Numero de celular": 3123456789,
-          "Numero de telefono fijo": 6182345678,
-          "Estado": "Aprobado",
-          "Riesgo": ""
-      },
-      {
-          "Id": "1011122334",
-          "Nombre": "Ricardo Andres",
-          "Apellido": "Gutierrez Ramirez",
-          "Direccion": "Av 7 #12-05",
-          "Acudiente": "Maria Gutierrez",
-          "Numero de celular": 3198765432,
-          "Numero de telefono fijo": 6134567890,
-          "Estado": "Inscrito",
-          "Riesgo": "Bajo"
-      },
-      {
-          "Id": "1122334455",
-          "Nombre": "Carmen Isabel",
-          "Apellido": "Jimenez Soto",
-          "Direccion": "Calle 45 #13-07",
-          "Acudiente": "Luis Jimenez",
-          "Numero de celular": 3147682345,
-          "Numero de telefono fijo": 6172345678,
-          "Estado": "Pendiente",
-          "Riesgo": "Alto"
-      },
-      {
-          "Id": "2233445566",
-          "Nombre": "Carlos Eduardo",
-          "Apellido": "Rodriguez Cortes",
-          "Direccion": "Cra 12 #89-03",
-          "Acudiente": "Elena Rodriguez",
-          "Numero de celular": 3189876543,
-          "Numero de telefono fijo": 6198765432,
-          "Estado": "Aprobado",
-          "Riesgo": "Moderado"
-      },
-      {
-          "Id": "3344556677",
-          "Nombre": "Paola Andrea",
-          "Apellido": "Mora Ruiz",
-          "Direccion": "Carrera 18 #34-11",
-          "Acudiente": "Ana Mora",
-          "Numero de celular": 3192345678,
-          "Numero de telefono fijo": 6102345678,
-          "Estado": "Rechazado",
-          "Riesgo": "Bajo"
-      },
-      {
-          "Id": "4455667788",
-          "Nombre": "Felipe Esteban",
-          "Apellido": "Lozano Vega",
-          "Direccion": "Cra 25 #67-08",
-          "Acudiente": "Marcela Lozano",
-          "Numero de celular": 3123456789,
-          "Numero de telefono fijo": 6141234567,
-          "Estado": "Pendiente",
-          "Riesgo": ""
-      },
-      {
-          "Id": "5566778899",
-          "Nombre": "Sofia Margarita",
-          "Apellido": "Paredes Salazar",
-          "Direccion": "Calle 28 #13-14",
-          "Acudiente": "Julian Paredes",
-          "Numero de celular": 3191122334,
-          "Numero de telefono fijo": 6169876543,
-          "Estado": "Aprobado",
-          "Riesgo": "Moderado"
-      },
-      {
-          "id": 1099741170,
-          "Nombre": "Saray Sofia",
-          "Apellido": "Diaz Rodrguez",
-          "Direccion": "Cra22 \u00b745-43",
-          "Acudiente": "Maria Sofia Pabon ",
-          "Numero de celular": 3454545444,
-          "Numero de telefono": 6543454345
-      },
-      {
-          "id": 1099654456,
-          "Nombre": "Juan Camilo",
-          "Apellido": "Guerrero Melo",
-          "Direccion": "Cl 34 \u00b745-56",
-          "Acudiente": "Santiago ",
-          "Numero de celular": 3245434545,
-          "Numero de telefono": 6544567876
-      }
-  ]
+    "informacion": [
+        {
+            "Id": "6677889901",
+            "Nombre": "Carlos Alberto",
+            "Apellido": "Garcia Vargas",
+            "Direccion": "Cra 15 #18-09",
+            "Acudiente": "Mar\u00eda Garcia",
+            "Numero de celular": 3152334455,
+            "Numero de telefono fijo": 6123456789,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": true,
+                "Aprobado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889902",
+            "Nombre": "Laura Eugenia",
+            "Apellido": "Mendez Romero",
+            "Direccion": "Calle 34 #56-09",
+            "Acudiente": "Jos\u00e9 Mendez",
+            "Numero de celular": 3182445789,
+            "Numero de telefono fijo": 6173456789,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprobado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889903",
+            "Nombre": "Ana Maria",
+            "Apellido": "P\u00e9rez Garc\u00eda",
+            "Direccion": "Avenida 50 #23-12",
+            "Acudiente": "Carlos P\u00e9rez",
+            "Numero de celular": 3191345678,
+            "Numero de telefono fijo": 6145678901,
+            "Estado": {
+                "En proceso": true,
+                "Inscrito": false,
+                "Aprobado": false,
+                "Rechazado": false,
+                "Cursando": true,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889904",
+            "Nombre": "Juan Carlos",
+            "Apellido": "Lopez Sanchez",
+            "Direccion": "Carrera 24 #45-20",
+            "Acudiente": "Maria Lopez",
+            "Numero de celular": 3145678901,
+            "Numero de telefono fijo": 6156789012,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": true,
+                "Aprobado": true,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889905",
+            "Nombre": "Marta Lucia",
+            "Apellido": "Gonzalez Fern\u00e1ndez",
+            "Direccion": "Calle 9 #15-08",
+            "Acudiente": "Luis Gonzalez",
+            "Numero de celular": 3172345678,
+            "Numero de telefono fijo": 6182345678,
+            "Estado": {
+                "En proceso": true,
+                "Inscrito": false,
+                "Aprobado": false,
+                "Rechazado": false,
+                "Cursando": true,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889906",
+            "Nombre": "Carlos Eduardo",
+            "Apellido": "Mart\u00ednez L\u00f3pez",
+            "Direccion": "Calle 6 #34-18",
+            "Acudiente": "Juan Mart\u00ednez",
+            "Numero de celular": 3123456789,
+            "Numero de telefono fijo": 6198765432,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": true,
+                "Aprobado": true,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889907",
+            "Nombre": "Sofia Isabel",
+            "Apellido": "Ram\u00edrez P\u00e9rez",
+            "Direccion": "Carrera 10 #50-15",
+            "Acudiente": "Patricia Ram\u00edrez",
+            "Numero de celular": 3112345678,
+            "Numero de telefono fijo": 6209876543,
+            "Estado": {
+                "En proceso": true,
+                "Inscrito": false,
+                "Aprobado": false,
+                "Rechazado": false,
+                "Cursando": true,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889908",
+            "Nombre": "Ricardo Andr\u00e9s",
+            "Apellido": "Gomez Arias",
+            "Direccion": "Avenida 15 #72-10",
+            "Acudiente": "Felipe Gomez",
+            "Numero de celular": 3159876543,
+            "Numero de telefono fijo": 6234567890,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": true,
+                "Aprobado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889909",
+            "Nombre": "Maria Jos\u00e9",
+            "Apellido": "Hernandez Torres",
+            "Direccion": "Calle 18 #10-03",
+            "Acudiente": "Raquel Hernandez",
+            "Numero de celular": 3146789012,
+            "Numero de telefono fijo": 6245678901,
+            "Estado": {
+                "En proceso": true,
+                "Inscrito": false,
+                "Aprobado": false,
+                "Rechazado": false,
+                "Cursando": true,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "Id": "6677889910",
+            "Nombre": "Fernando Luis",
+            "Apellido": "Ruiz Mart\u00ednez",
+            "Direccion": "Carrera 8 #45-22",
+            "Acudiente": "M\u00f3nica Ruiz",
+            "Numero de celular": 3183456789,
+            "Numero de telefono fijo": 6256789012,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprobado": true,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulsado": false,
+                "Retirado": false
+            },
+            "Riesgo": ""
+        },
+        {
+            "id": 1099741170,
+            "Nombre": "Sara Sofia",
+            "Apellido": "Diaz Rodriguez",
+            "Direccion": "Cra 22 \u00b734-38",
+            "Acudiente": "Adriana Rodriguez",
+            "Numero de celular": 3154533345,
+            "Numero de telefono": 6576543454
+        }
+    ]
 }
