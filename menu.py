@@ -1,5 +1,6 @@
+
+from deftrainer import trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, breakpoint, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1
 import json
-from deftrainer import usertrainer,trainerAgregarNotasp, trainerAgregarNotasp1, breakpoint, trainerAgregarNotasm, trainerAgregarNotasm1, trainerAgregarNotasJ, trainerAgregarNotasJ1
 def abrirJSON():
     dicFinal = {}
     with open('./camper.json', 'r') as openFile:
@@ -56,98 +57,133 @@ while True:
                 if ["Estado"] == "Aprobado":
                         print("")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     elif opcion==2:
      print("Bienvenido Trainer")
-     n1=int(input("Digite su codigo"))
+     print("1. Pedro Gomez")
+     print("2. Miguel Rodriguez")
+     print("3. Juan Nariño")
+     print("4. Santiago Melo")
+     print("5. Carlos Rueda")
+     print("6. Antonio Vega")
+     
+     n1=int(input("Digite su codigo:"))
+
      if n1==1:
-        usertrainer()
-        while True:
-            if clase==1:
-                trainerAgregarNotasp()
-            elif clase==2:
-                trainerAgregarNotasp1()
+        print("Bienvenido trainer Pedro Gomez")
+        print("Para agregar notas a clase P_1 ingrese (1)")
+        print("Para agregar notas a clase P_2 ingrese (2)")
+        print("Para ver su horario digite (3)")
+        print ("Para salir digite (4)")
+        clase=int(input("Digite su eleccion: "))
+        if clase==1:
+            trainerAgregarNotasp()
+        elif clase==2:
+            trainerAgregarNotasp1()
+        elif clase==3:
+            print("")
+            ## imprimir horario y clases
+        elif clase==4:
+            breakpoint()  
+        else:
+            print("Eleccion invalida")
 
-            elif clase==3:
-                breakpoint()
-
-
-    elif n1==2:
-        usertrainer()
+     elif n1==2:
+        print("Bienvenido trainer Miguel Rodriguez")
+        print("Para agregar notas a clase M_1 ingrese (1)")
+        print("Para agregar notas a clase M_2 ingrese (2)")
+        print("Para ver su horario digite (3)")
+        print ("Para salir digite (4)")
+        clase=int(input("Digite su eleccion: "))
         if clase==1:
             trainerAgregarNotasm()
-
         elif clase==2:
-                trainerAgregarNotasm1()
-
-          
-
-    
+            trainerAgregarNotasm1()
+        elif clase==3:
+            print("")
+            ## imprimir horario y clases
+        elif clase==4:
+            breakpoint()  
+        else:
+            print("Eleccion invalida")
+            
     elif n1==3:
-        usertrainer()
-        usertrainer=n1
+        print ("Bienvenido trainer Juan Nariño")
+        print("Para agregar notas a clase J_1 ingrese (1)")
+        print("Para agregar notas a clase J_2 ingrese (2)")
+        print("Para ver su horario digite (3)")
+        print ("Para salir digite (4)")
+        clase=int(input("Digite su eleccion: "))
         if clase==1:
             trainerAgregarNotasJ()
-    elif n1==4:
-        if clase==1:
+        elif clase==2:
             trainerAgregarNotasJ1()
+        elif clase==3:
+            print("")
+            ## imprimir horario y clases
+        elif clase==4:
+            breakpoint()  
+        else:
+            print("Eleccion invalida")
         
 
     elif n1==4:
-        usertrainer()
+        print ("Bienvenido trainer Santiago Melo")
+        print("Para agregar notas a clase S_1 ingrese (1)")
+        print("Para agregar notas a clase S_2 ingrese (2)")
+        print("Para ver su horario digite (3)")
+        print ("Para salir digite (4)")
+        clase=int(input("Digite su eleccion: "))
         if clase==1:
-            print ("Estos son los estudiantes de la clase C_1")
-            ###imprimir la lista de esa clase con notas 
-            est=int(input("Digite el numero del estudiante al que le quiere ingresar una la nota"))
-            print ("1. para trabajos")
-            print ("2. para proyectos")
-            print ("3. para otros")
-            nota=int(input("Ingrese que nota quiere agregar: "))
-            if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-                ##Agregar nota a diccionario
-            elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
-                ##Agregar nota a diccionario
-            elif nota==3:
-                otros=int(input("Digite la nota: "))
-                ##Agregar nota a diccionario
-            else:
-                print("Codigo incorrecto")
+            trainerAgregarNotasS()
+        elif clase==2:
+            trainerAgregarNotasS1()
+        elif clase==3:
+            print("")
+            ## imprimir horario y clases
+        elif clase==4:
+            breakpoint()  
+        else:
+            print("Eleccion invalida")
+               
     elif n1==5:
-        usertrainer()
-      
+        print ("Bienvenido trainer Carlos Rueda")
+        print("Para agregar notas a clase S_1 ingrese (1)")
+        print("Para agregar notas a clase S_2 ingrese (2)")
+        print("Para ver su horario digite (3)")
+        print ("Para salir digite (4)")
+        clase=int(input("Digite su eleccion: "))
         if clase==1:
-            print ("Estos son los estudiantes de la clase A_1")
-            ###imprimir la lista de esa clase con notas 
-            est=int(input("Digite el numero del estudiante al que le quiere ingresar una la nota"))
-            print ("1. para trabajos")
-            print ("2. para proyectos")
-            print ("3. para otros")
-            nota=int(input("Ingrese que nota quiere agregar: "))
-            if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-                ##Agregar nota a diccionario
-            elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
-                ##Agregar nota a diccionario
-            elif nota==3:
-                otros=int(input("Digite la nota: "))
-                ##Agregar nota a diccionario
-            else:
-                print("Codigo incorrecto")
+            trainerAgregarNotasC()
+        elif clase==2:
+            trainerAgregarNotasC1()
+        elif clase==3:
+            print("")
+            ## imprimir horario y clases
+        elif clase==4:
+            breakpoint()  
+        else:
+            print("Eleccion invalida")
+    elif n1==6:
+        print ("Bienvenida trainer Antonio Vega")
+        print("Para agregar notas a clase A_1 ingrese (1)")
+        print("Para agregar notas a clase A_2 ingrese (2)")
+        print("Para ver su horario digite (3)")
+        print ("Para salir digite (4)")
+        clase=int(input("Digite su eleccion: "))
+        if clase==1:
+            trainerAgregarNotasA()
+        elif clase==2:
+            trainerAgregarNotasA1()
+        elif clase==3:
+            print("")
+            ## imprimir horario y clases
+        elif clase==4:
+            breakpoint()  
+        else:
+            print("Eleccion invalida")
+    
+ 
     else:
         print("Codigo incorrecto")
+        breakpoint()
 

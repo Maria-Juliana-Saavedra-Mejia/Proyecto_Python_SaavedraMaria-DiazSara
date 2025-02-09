@@ -9,16 +9,17 @@
             "Numero de celular": 3152334455,
             "Numero de telefono fijo": 6123456789,
             "Estado": {
-                "En proces":false,
-                "Inscrito": true,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889902",
         {
@@ -29,16 +30,17 @@
             "Numero de celular": 3182445789,
             "Numero de telefono fijo": 6173456789,
             "Estado": {
-                "En proceso": true,
-                "Inscrit":false,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En procesoo": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889903",
         {
@@ -49,16 +51,17 @@
             "Numero de celular": 3191345678,
             "Numero de telefono fijo": 6145678901,
             "Estado": {
-                "En proceso": true,
-                "Inscrit":false,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursando": true,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En procesoo": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursandoo": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889904",
         {
@@ -69,16 +72,17 @@
             "Numero de celular": 3145678901,
             "Numero de telefono fijo": 6156789012,
             "Estado": {
-                "En proces":false,
-                "Inscrito": true,
-                "Aprobado": true,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovadoo": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889905",
         {
@@ -89,16 +93,17 @@
             "Numero de celular": 3172345678,
             "Numero de telefono fijo": 6182345678,
             "Estado": {
-                "En proceso": true,
-                "Inscrit":false,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursando": true,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En procesoo": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursandoo": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889906",
         {
@@ -109,16 +114,17 @@
             "Numero de celular": 3123456789,
             "Numero de telefono fijo": 6198765432,
             "Estado": {
-                "En proces":false,
-                "Inscrito": true,
-                "Aprobado": true,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889907",
         {
@@ -129,16 +135,17 @@
             "Numero de celular": 3112345678,
             "Numero de telefono fijo": 6209876543,
             "Estado": {
-                "En proceso": true,
-                "Inscrit":false,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursando": true,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En procesoo": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursandoo": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889908",
         {
@@ -149,16 +156,17 @@
             "Numero de celular": 3159876543,
             "Numero de telefono fijo": 6234567890,
             "Estado": {
-                "En proces":false,
-                "Inscrito": true,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889909",
         {
@@ -169,16 +177,17 @@
             "Numero de celular": 3146789012,
             "Numero de telefono fijo": 6245678901,
             "Estado": {
-                "En proceso": true,
-                "Inscrit":false,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursando": true,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "6677889910",
         {
@@ -189,16 +198,17 @@
             "Numero de celular": 3183456789,
             "Numero de telefono fijo": 6256789012,
             "Estado": {
-                "En proces":false,
-                "Inscrit":false,
-                "Aprobado": true,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovadoo": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": ""
+            "Riesgo": "",
+            "Curso": ""
         },
         "1099741170",
         {
@@ -209,17 +219,19 @@
             "Numero de celular": 3154533345,
             "Numero de telefono": 6576543454,
             "Estado": {
-                "En proces":false,
-                "Inscrit":false,
-                "Aprobado": true,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
-            }
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
+            },
+            "Riesgo": "",
+            "Curso": ""
         },
-        "1122334455" ,
+        "1122334455",
         {
             "Nombre": "Carlos Andrés",
             "Apellido": "Ramírez Soto",
@@ -228,18 +240,20 @@
             "Numero de celular": 3001122334,
             "Numero de telefono fijo": 6122334455,
             "Estado": {
-                "En proces":false,
-                "Inscrito": true,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursando": true,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "2233445566", {
+        "2233445566",
+        {
             "Nombre": "Isabel Cristina",
             "Apellido": "Pérez Martínez",
             "Direccion": "Avenida 7 #50-30",
@@ -247,18 +261,20 @@
             "Numero de celular": 3012233445,
             "Numero de telefono fijo": 6133344556,
             "Estado": {
-                "En proceso": true,
-                "Inscrit":false,
-                "Aprobad":false,
-                "Rechazado": true,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "3344556677", {
+        "3344556677",
+        {
             "Nombre": "Juan José",
             "Apellido": "Gómez Ríos",
             "Direccion": "Carrera 9 #12-21",
@@ -266,18 +282,20 @@
             "Numero de celular": 3123456789,
             "Numero de telefono fijo": 6145678902,
             "Estado": {
-                "En proces":false,
-                "Inscrito": true,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursando": true,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "4455667788", {
+        "4455667788",
+        {
             "Nombre": "Ana María",
             "Apellido": "González Romero",
             "Direccion": "Calle 28 #22-14",
@@ -285,18 +303,20 @@
             "Numero de celular": 3145678903,
             "Numero de telefono fijo": 6156789023,
             "Estado": {
-                "En proceso": true,
-                "Inscrit":false,
-                "Aprobado": true,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "5566778899", {
+        "5566778899",
+        {
             "Nombre": "Felipe",
             "Apellido": "Vargas Muñoz",
             "Direccion": "Avenida 22 #13-44",
@@ -304,18 +324,20 @@
             "Numero de celular": 3192345678,
             "Numero de telefono fijo": 6123456789,
             "Estado": {
-                "En proces":false,
-                "Inscrito": true,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduado": true,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "6677889900", {
+        "6677889900",
+        {
             "Nombre": "Santiago",
             "Apellido": "Mora Fernández",
             "Direccion": "Calle 30 #15-20",
@@ -323,18 +345,20 @@
             "Numero de celular": 3201234567,
             "Numero de telefono fijo": 6159876543,
             "Estado": {
-                "En proceso": true,
-                "Inscrit":false,
-                "Aprobad":false,
-                "Rechazad":false,
-                "Cursando": true,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "7788990011", {
+        "7788990011",
+        {
             "Nombre": "Juliana",
             "Apellido": "López García",
             "Direccion": "Carrera 5 #34-18",
@@ -342,18 +366,20 @@
             "Numero de celular": 3155678901,
             "Numero de telefono fijo": 6145678901,
             "Estado": {
-                "En proces":false,
-                "Inscrito": true,
-                "Aprobado": true,
-                "Rechazad":false,
-                "Cursand":false,
-                "Graduad":false,
-                "Expulsad":false,
-                "Retirad":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "8899001122", {
+        "8899001122",
+        {
             "Nombre": "Sofía",
             "Apellido": "Castro Ruiz",
             "Direccion": "Avenida 12 #16-11",
@@ -361,18 +387,20 @@
             "Numero de celular": 3123456789,
             "Numero de telefono fijo": 6198765432,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando": true,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "1122334455", {
+        "1122334455",
+        {
             "Nombre": "Pedro José",
             "Apellido": "Martínez Ramos",
             "Direccion": "Calle 1 #10-15",
@@ -380,18 +408,20 @@
             "Numero de celular": 3001112233,
             "Numero de telefono fijo": 6122334455,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando": true,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "2233445566", {
+        "2233445566",
+        {
             "Nombre": "Carla Sofía",
             "Apellido": "González Soto",
             "Direccion": "Carrera 5 #45-30",
@@ -399,18 +429,20 @@
             "Numero de celular": 3012345678,
             "Numero de telefono fijo": 6156789023,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "3344556677", {
+        "3344556677",
+        {
             "Nombre": "Tomás",
             "Apellido": "Ramírez Pérez",
             "Direccion": "Calle 7 #18-30",
@@ -418,18 +450,20 @@
             "Numero de celular": 3149876543,
             "Numero de telefono fijo": 6167890123,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado": true,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "4455667788", {
+        "4455667788",
+        {
             "Nombre": "Valeria",
             "Apellido": "Hernández García",
             "Direccion": "Avenida 10 #45-18",
@@ -437,18 +471,20 @@
             "Numero de celular": 3201234567,
             "Numero de telefono fijo": 6198765432,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando": true,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "5566778899", {
+        "5566778899",
+        {
             "Nombre": "Jorge Luis",
             "Apellido": "Fernández Pérez",
             "Direccion": "Carrera 3 #22-20",
@@ -456,18 +492,20 @@
             "Numero de celular": 3182345678,
             "Numero de telefono fijo": 6123456789,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado": true,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazado": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "6677889900", {
+        "6677889900",
+        {
             "Nombre": "Raúl",
             "Apellido": "Lopez Martínez",
             "Direccion": "Calle 5 #40-14",
@@ -475,18 +513,20 @@
             "Numero de celular": 3145678901,
             "Numero de telefono fijo": 6209876543,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado": true,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "7788990011", {
+        "7788990011",
+        {
             "Nombre": "Diana Carolina",
             "Apellido": "Jiménez Gómez",
             "Direccion": "Avenida 2 #12-11",
@@ -494,18 +534,20 @@
             "Numero de celular": 3159876543,
             "Numero de telefono fijo": 6162345678,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado": true
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "8899001122", {
+        "8899001122",
+        {
             "Nombre": "Felipe Andrés",
             "Apellido": "Martínez Gómez",
             "Direccion": "Calle 18 #30-19",
@@ -513,18 +555,20 @@
             "Numero de celular": 3201234567,
             "Numero de telefono fijo": 6145678901,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado": true,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "9900112233", {
+        "9900112233",
+        {
             "Nombre": "Isabel María",
             "Apellido": "García Díaz",
             "Direccion": "Carrera 14 #32-18",
@@ -532,18 +576,20 @@
             "Numero de celular": 3198765432,
             "Numero de telefono fijo": 6234567890,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado": true,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "1122339977", {
+        "1122339977",
+        {
             "Nombre": "Ana Carolina",
             "Apellido": "Ruiz Gómez",
             "Direccion": "Calle 20 #55-30",
@@ -551,18 +597,20 @@
             "Numero de celular": 3101234567,
             "Numero de telefono fijo": 6112345678,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "2233449988", {
+        "2233449988",
+        {
             "Nombre": "Felipe Esteban",
             "Apellido": "Cordero Torres",
             "Direccion": "Carrera 12 #35-45",
@@ -570,18 +618,20 @@
             "Numero de celular": 3007654321,
             "Numero de telefono fijo": 6123456790,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado": true,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "3344556678", {
+        "3344556678",
+        {
             "Nombre": "Sofía Margarita",
             "Apellido": "Vega Martínez",
             "Direccion": "Avenida 9 #60-25",
@@ -589,18 +639,20 @@
             "Numero de celular": 3192345678,
             "Numero de telefono fijo": 6187654321,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando": true,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "4455667789", {
+        "4455667789",
+        {
             "Nombre": "Carlos Eduardo",
             "Apellido": "Ortiz Pérez",
             "Direccion": "Calle 25 #23-50",
@@ -608,18 +660,20 @@
             "Numero de celular": 3108765432,
             "Numero de telefono fijo": 6129876543,
             "Estado": {
-                "En proceso":false,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado": true,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "5566778890", {
+        "5566778890",
+        {
             "Nombre": "Andrés Felipe",
             "Apellido": "Salazar García",
             "Direccion": "Calle 15 #10-18",
@@ -627,18 +681,20 @@
             "Numero de celular": 3182345678,
             "Numero de telefono fijo": 6143219876,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando": true,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "6677889901", {
+        "6677889901",
+        {
             "Nombre": "Marta Lucía",
             "Apellido": "Paredes Ruiz",
             "Direccion": "Calle 3 #11-20",
@@ -646,18 +702,20 @@
             "Numero de celular": 3176543210,
             "Numero de telefono fijo": 6154321098,
             "Estado": {
-                "En proceso":false,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado": true,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "7788990012", {
+        "7788990012",
+        {
             "Nombre": "Oscar Daniel",
             "Apellido": "Castrillón López",
             "Direccion": "Avenida 8 #70-10",
@@ -665,18 +723,20 @@
             "Numero de celular": 3198765432,
             "Numero de telefono fijo": 6167890234,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando": true,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "8899001123", {
+        "8899001123",
+        {
             "Nombre": "Diana Carolina",
             "Apellido": "Gómez Paredes",
             "Direccion": "Calle 6 #12-35",
@@ -684,18 +744,20 @@
             "Numero de celular": 3123456789,
             "Numero de telefono fijo": 6176543210,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursandohttps://prod.liveshare.vsengsaas.visualstudio.com/join?32310E3AA331980C6B3A65DFBEA1CCA8E59A": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "9900112234", {
+        "9900112234",
+        {
             "Nombre": "Samuel",
             "Apellido": "Torres Díaz",
             "Direccion": "Carrera 10 #32-15",
@@ -703,18 +765,20 @@
             "Numero de celular": 3206549876,
             "Numero de telefono fijo": 6182345678,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "1122334455", {
+        "1122334455",
+        {
             "Nombre": "Valeria Paola",
             "Apellido": "Méndez Gómez",
             "Direccion": "Carrera 20 #15-12",
@@ -722,18 +786,20 @@
             "Numero de celular": 3198765432,
             "Numero de telefono fijo": 6187654321,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "2233445566", {
+        "2233445566",
+        {
             "Nombre": "Emilio Alejandro",
             "Apellido": "Pinto Ramírez",
             "Direccion": "Avenida 40 #18-22",
@@ -741,18 +807,20 @@
             "Numero de celular": 3123456789,
             "Numero de telefono fijo": 6154321098,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando": true,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "3344556677", {
+        "3344556677",
+        {
             "Nombre": "Paola Andrea",
             "Apellido": "Suárez López",
             "Direccion": "Calle 60 #30-05",
@@ -760,18 +828,20 @@
             "Numero de celular": 3112233445,
             "Numero de telefono fijo": 6168765432,
             "Estado": {
-                "En proceso":false,
-                "Inscrito":false,
-                "Aprobado": true,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "4455667788", {
+        "4455667788",
+        {
             "Nombre": "Felipe Antonio",
             "Apellido": "Ramírez Cortés",
             "Direccion": "Calle 12 #45-13",
@@ -779,18 +849,20 @@
             "Numero de celular": 3159876543,
             "Numero de telefono fijo": 6123456789,
             "Estado": {
-                "En proceso":false,
-                "Inscrito":false,
-                "Aprobado": true,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "5566778899", {
+        "5566778899",
+        {
             "Nombre": "Isabel Cristina",
             "Apellido": "Gómez Ramírez",
             "Direccion": "Carrera 15 #18-03",
@@ -798,18 +870,20 @@
             "Numero de celular": 3192345678,
             "Numero de telefono fijo": 6187654321,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "6677889900", {
+        "6677889900",
+        {
             "Nombre": "José Luis",
             "Apellido": "Fernández Morales",
             "Direccion": "Calle 30 #10-55",
@@ -817,18 +891,20 @@
             "Numero de celular": 3207654321,
             "Numero de telefono fijo": 6123456789,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando": true,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "7788990011", {
+        "7788990011",
+        {
             "Nombre": "Margarita Elena",
             "Apellido": "Castro Díaz",
             "Direccion": "Avenida 10 #23-50",
@@ -836,18 +912,20 @@
             "Numero de celular": 3157654321,
             "Numero de telefono fijo": 6178901234,
             "Estado": {
-                "En proceso": true,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "8899001122", {
+        "8899001122",
+        {
             "Nombre": "Ricardo Javier",
             "Apellido": "Vargas López",
             "Direccion": "Carrera 5 #25-18",
@@ -855,18 +933,20 @@
             "Numero de celular": 3123456789,
             "Numero de telefono fijo": 6143219876,
             "Estado": {
-                "En proceso":false,
-                "Inscrito": true,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado":false,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
         },
-        "9900112233", {
+        "9900112233",
+        {
             "Nombre": "Lucía Isabel",
             "Apellido": "Pérez Sánchez",
             "Direccion": "Calle 8 #16-07",
@@ -874,206 +954,227 @@
             "Numero de celular": 3198765432,
             "Numero de telefono fijo": 6178901234,
             "Estado": {
-                "En proceso":false,
-                "Inscrito":false,
-                "Aprobado":false,
-                "Rechazado":false,
-                "Cursando":false,
-                "Graduado": true,
-                "Expulsado":false,
-                "Retirado":false
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
         },
-            "1011121314",{
-                "Nombre": "Lucía María",
-                "Apellido": "Rodríguez Ávila",
-                "Direccion": "Carrera 50 #12-45",
-                "Acudiente": "Carlos Rodríguez",
-                "Numero de celular": 3198765432,
-                "Numero de telefono fijo": 6123456789,
-                "Estado": {
-                    "En proceso": false,
-                    "Inscrito": true,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": false,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Bajo"
+        "1011121314",
+        {
+            "Nombre": "Lucía María",
+            "Apellido": "Rodríguez Ávila",
+            "Direccion": "Carrera 50 #12-45",
+            "Acudiente": "Carlos Rodríguez",
+            "Numero de celular": 3198765432,
+            "Numero de telefono fijo": 6123456789,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "2022233435", {
-                "Nombre": "Tomás Eduardo",
-                "Apellido": "Gómez Pérez",
-                "Direccion": "Calle 12 #50-32",
-                "Acudiente": "María Gómez",
-                "Numero de celular": 3123456789,
-                "Numero de telefono fijo": 6145678901,
-                "Estado": {
-                    "En proceso": true,
-                    "Inscrito": false,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": true,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "2022233435",
+        {
+            "Nombre": "Tomás Eduardo",
+            "Apellido": "Gómez Pérez",
+            "Direccion": "Calle 12 #50-32",
+            "Acudiente": "María Gómez",
+            "Numero de celular": 3123456789,
+            "Numero de telefono fijo": 6145678901,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "3033344556", {
-                "Nombre": "Renata Sofía",
-                "Apellido": "Vázquez Méndez",
-                "Direccion": "Carrera 30 #18-23",
-                "Acudiente": "Miguel Vázquez",
-                "Numero de celular": 3182345678,
-                "Numero de telefono fijo": 6167890123,
-                "Estado": {
-                    "En proceso": false,
-                    "Inscrito": true,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": false,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "3033344556",
+        {
+            "Nombre": "Renata Sofía",
+            "Apellido": "Vázquez Méndez",
+            "Direccion": "Carrera 30 #18-23",
+            "Acudiente": "Miguel Vázquez",
+            "Numero de celular": 3182345678,
+            "Numero de telefono fijo": 6167890123,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "4044455667", {
-                "Nombre": "Sebastián Luis",
-                "Apellido": "Paredes Martínez",
-                "Direccion": "Calle 45 #10-12",
-                "Acudiente": "Adriana Paredes",
-                "Numero de celular": 3192345678,
-                "Numero de telefono fijo": 6176543210,
-                "Estado": {
-                    "En proceso": true,
-                    "Inscrito": false,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": false,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "4044455667",
+        {
+            "Nombre": "Sebastián Luis",
+            "Apellido": "Paredes Martínez",
+            "Direccion": "Calle 45 #10-12",
+            "Acudiente": "Adriana Paredes",
+            "Numero de celular": 3192345678,
+            "Numero de telefono fijo": 6176543210,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "5055566778", {
-                "Nombre": "María Fernanda",
-                "Apellido": "López Castro",
-                "Direccion": "Avenida 35 #23-07",
-                "Acudiente": "Pedro López",
-                "Numero de celular": 3116789012,
-                "Numero de telefono fijo": 6182345678,
-                "Estado": {
-                    "En proceso": false,
-                    "Inscrito": true,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": true,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "5055566778",
+        {
+            "Nombre": "María Fernanda",
+            "Apellido": "López Castro",
+            "Direccion": "Avenida 35 #23-07",
+            "Acudiente": "Pedro López",
+            "Numero de celular": 3116789012,
+            "Numero de telefono fijo": 6182345678,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "6066677889", {
-                "Nombre": "Alberto Antonio",
-                "Apellido": "García Sánchez",
-                "Direccion": "Calle 18 #16-15",
-                "Acudiente": "Felipe García",
-                "Numero de celular": 3123456789,
-                "Numero de telefono fijo": 6198765432,
-                "Estado": {
-                    "En proceso": false,
-                    "Inscrito": false,
-                    "Aprobado": true,
-                    "Rechazado": false,
-                    "Cursando": false,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "6066677889",
+        {
+            "Nombre": "Alberto Antonio",
+            "Apellido": "García Sánchez",
+            "Direccion": "Calle 18 #16-15",
+            "Acudiente": "Felipe García",
+            "Numero de celular": 3123456789,
+            "Numero de telefono fijo": 6198765432,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "7077788990", {
-                "Nombre": "Felipe Javier",
-                "Apellido": "Díaz Gómez",
-                "Direccion": "Carrera 8 #32-09",
-                "Acudiente": "Ana Díaz",
-                "Numero de celular": 3159876543,
-                "Numero de telefono fijo": 6178901234,
-                "Estado": {
-                    "En proceso": true,
-                    "Inscrito": false,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": true,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Moderado"
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "7077788990",
+        {
+            "Nombre": "Felipe Javier",
+            "Apellido": "Díaz Gómez",
+            "Direccion": "Carrera 8 #32-09",
+            "Acudiente": "Ana Díaz",
+            "Numero de celular": 3159876543,
+            "Numero de telefono fijo": 6178901234,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "8088899001", {
-                "Nombre": "Carlos Eduardo",
-                "Apellido": "Cordero Salazar",
-                "Direccion": "Avenida 75 #22-44",
-                "Acudiente": "Rosa Cordero",
-                "Numero de celular": 3197654321,
-                "Numero de telefono fijo": 6172345678,
-                "Estado": {
-                    "En proceso": false,
-                    "Inscrito": true,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": false,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Bajo"
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "8088899001",
+        {
+            "Nombre": "Carlos Eduardo",
+            "Apellido": "Cordero Salazar",
+            "Direccion": "Avenida 75 #22-44",
+            "Acudiente": "Rosa Cordero",
+            "Numero de celular": 3197654321,
+            "Numero de telefono fijo": 6172345678,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "9099001122", {
-                "Nombre": "Clara Isabel",
-                "Apellido": "Ramírez Castillo",
-                "Direccion": "Calle 5 #20-08",
-                "Acudiente": "Eduardo Ramírez",
-                "Numero de celular": 3101234567,
-                "Numero de telefono fijo": 6198765432,
-                "Estado": {
-                    "En proceso": true,
-                    "Inscrito": false,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": true,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Alto"
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "9099001122",
+        {
+            "Nombre": "Clara Isabel",
+            "Apellido": "Ramírez Castillo",
+            "Direccion": "Calle 5 #20-08",
+            "Acudiente": "Eduardo Ramírez",
+            "Numero de celular": 3101234567,
+            "Numero de telefono fijo": 6198765432,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
             },
-            "1011121315", {
-                "Nombre": "Martín Andrés",
-                "Apellido": "Hernández Pérez",
-                "Direccion": "Calle 11 #35-20",
-                "Acudiente": "Gloria Hernández",
-                "Numero de celular": 3128765432,
-                "Numero de telefono fijo": 6187654321,
-                "Estado": {
-                    "En proceso": false,
-                    "Inscrito": true,
-                    "Aprobado": false,
-                    "Rechazado": false,
-                    "Cursando": false,
-                    "Graduado": false,
-                    "Expulsado": false,
-                    "Retirado": false
-                },
-                "Riesgo": "Moderado"
-            }
+            "Riesgo": "",
+            "Curso": ""
+        },
+        "1011121315",
+        {
+            "Nombre": "Martín Andrés",
+            "Apellido": "Hernández Pérez",
+            "Direccion": "Calle 11 #35-20",
+            "Acudiente": "Gloria Hernández",
+            "Numero de celular": 3128765432,
+            "Numero de telefono fijo": 6187654321,
+            "Estado": {
+                "En proceso": false,
+                "Inscrito": false,
+                "Aprovado": false,
+                "Rechazao": false,
+                "Cursando": false,
+                "Graduado": false,
+                "Expulado": false,
+                "Retirado": false
+            },
+            "Riesgo": "",
+            "Curso": ""
+        }
     ]
 }
