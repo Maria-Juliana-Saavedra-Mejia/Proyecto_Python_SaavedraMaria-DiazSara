@@ -1,5 +1,6 @@
 {
   "informacion": [
+<<<<<<< HEAD
       {
           "Id": "6677889900",
           "Nombre": "Carlos Alberto",
@@ -157,6 +158,237 @@
         "Numero de telefono fijo": "",
         "Estado": "",
         "Riesgo ": ""
+=======
+    {
+      "Id": "1023456789",
+      "Nombre completo": "Carmen Sofia Alvarez Gomez",
+      "Direccion": "Cra 34 #45-03",
+      "Acudiente": "Adriana Rodriguez",
+      "Numero de celular": 3167475434,
+      "Numero de telefono fijo": 6179876543,
+      "Estado": "Aprobado",
+      "Riesgo": ""
+      },
+      {
+        "Id": "1122334455",
+        "Nombre completo": "Luisa Sofia Mantilla Gomez",
+        "Direccion": "Cra 34 #45-03",
+        "Acudiente": "Adriana Rodriguez",
+        "Numero de celular": 3426786564,
+        "Numero de telefono fijo": 61454674,
+        "Estado": "Inscrito",
+        "Riesgo": ""
+      },
+      {
+        "Id": "1234567890",
+        "Nombre completo": "Maria Juliana Saavedra Mejia",
+        "Direccion": "Cra 34 #45-03",
+        "Acudiente": "Adriana Rodriguez",
+        "Numero de celular": 345234536,
+        "Numero de telefono fijo": 317558435,
+        "Estado": "Retirado"
+
+      },
+      {
+          "Id": "1029384756",
+          "Nombre completo": "Carlos Alberto Ruiz Sanchez",
+          "Direccion": "Cra 56 #12-67",
+          "Acudiente": "Mariana Sanchez",
+          "Numero de celular": 3219876543,
+          "Numero de telefono fijo": 62033445,
+          "Estado": "En proceso",
+          "Riesgo": ""
+      },
+      {
+          "Id": "1092837465",
+          "Nombre completo": "Ana Maria Lopez Torres",
+          "Direccion": "Cra 76 #21-89",
+          "Acudiente": "Felipe Lopez",
+          "Numero de celular": 3201234567,
+          "Numero de telefono fijo": 62778899,
+          "Estado": "Rechazado por prueba de ingreso",
+          "Riesgo": ""
+      },
+      {
+          "Id": "1010101010",
+          "Nombre completo": "Javier Antonio Perez Ramírez",
+          "Direccion": "Cra 11 #43-56",
+          "Acudiente": "Beatriz Ramírez",
+          "Numero de celular": 3145678901,
+          "Numero de telefono fijo": 61223344,
+          "Estado": "Cursando",
+          "Riesgo": ""
+      },
+      {
+          "Id": "1045678912",
+          "Nombre completo": "Mariana Isabel Garcia Soto",
+          "Direccion": "Cra 89 #90-01",
+          "Acudiente": "Carlos Soto",
+          "Numero de celular": 3112233445,
+          "Numero de telefono fijo": 62345678,
+          "Estado": "Graduado",
+          "Riesgo": ""
+      },
+      {
+          "Id": "1076543210",
+          "Nombre completo": "Ricardo Andrés Martínez Delgado",
+          "Direccion": "Cra 45 #67-89",
+          "Acudiente": "Sandra Martínez",
+          "Numero de celular": 3009876543,
+          "Numero de telefono fijo": 63456789,
+          "Estado": "Expulsado",
+          "Riesgo": ""
+      },
+      {
+          "Id": "1122334456",
+          "Nombre completo": "Gabriela Cecilia Ríos Pérez",
+          "Direccion": "Cra 22 ·55-66",
+          "Acudiente": "Ramón Ríos",
+          "Numero de celular": 3134567890,
+          "Numero de telefono fijo": 61543210,
+          "Estado": "Expulsado",
+          "Riesgo": ""
+      },
+      {
+          "Id": "1144556677",
+          "Nombre completo": "Felipe Javier Gómez Torres",
+          "Direccion": "Cra 99 ·11-22",
+          "Acudiente": "Laura Gómez",
+          "Numero de celular": 3101234567,
+          "Numero de telefono fijo": 62334455,
+          "Estado": "Cursando",
+          "Riesgo": "Riesgo bajo"
+      },
+      {
+            "Id": "1009876543",
+            "Nombre completo": "Fernando Andrés Quintero López",
+            "Direccion": "Cra 15 ·32-21",
+            "Acudiente": "Martha López",
+            "Numero de celular": 3117654321,
+            "Numero de telefono fijo": 61543210,
+            "Estado": "Cursando",
+            "Riesgo": "Riesgo medio"
+        },
+        {
+            "Id": "1018765432",
+            "Nombre completo": "Andrea Marcela Castillo Pérez",
+            "Direccion": "Cra 27 ·54-78",
+            "Acudiente": "Luis Castillo",
+            "Numero de celular": 3129876543,
+            "Numero de telefono fijo": 61678901,
+            "Estado": "Graduado",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1027654321",
+            "Nombre completo": "Jorge Enrique Rojas Vargas",
+            "Direccion": "Cra 48 ·98-45",
+            "Acudiente": "Sandra Vargas",
+            "Numero de celular": 3138765432,
+            "Numero de telefono fijo": 61765432,
+            "Estado": "Retirado",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1036543210",
+            "Nombre completo": "Mariana Isabel Suárez González",
+            "Direccion": "Cra 33 ·65-32",
+            "Acudiente": "Carlos Suárez",
+            "Numero de celular": 3147654321,
+            "Numero de telefono fijo": 61876543,
+            "Estado": "Inscrito",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1045432109",
+            "Nombre completo": "David Alejandro Martínez Ramírez",
+            "Direccion": "Cra 50 ·23-12",
+            "Acudiente": "Elena Ramírez",
+            "Numero de celular": 3159871234,
+            "Numero de telefono fijo": 61987654,
+            "Estado": "Expulsado",
+            "Riesgo": "Riesgo alto"
+        },
+        {
+            "Id": "1054321098",
+            "Nombre completo": "Natalia Beatriz Gutiérrez Ospina",
+            "Direccion": "Cra 62 ·45-78",
+            "Acudiente": "Roberto Ospina",
+            "Numero de celular": 3168765432,
+            "Numero de telefono fijo": 62098765,
+            "Estado": "Cursando",
+            "Riesgo": "Riesgo bajo"
+        },
+        {
+            "Id": "1063210987",
+            "Nombre completo": "Oscar Andrés Salazar Muñoz",
+            "Direccion": "Cra 18 ·98-12",
+            "Acudiente": "Paola Muñoz",
+            "Numero de celular": 3179876543,
+            "Numero de telefono fijo": 62109876,
+            "Estado": "En proceso",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1072109876",
+            "Nombre completo": "Patricia Juliana Herrera Mendoza",
+            "Direccion": "Cra 77 ·65-34",
+            "Acudiente": "Luis Mendoza",
+            "Numero de celular": 3187654321,
+            "Numero de telefono fijo": 62210987,
+            "Estado": "Graduado",
+            "Riesgo": ""
+        },
+        {
+            "Id": "1081098765",
+            "Nombre completo": "Carlos Alberto Rivera Rodríguez",
+            "Direccion": "Cra 40 ·87-23",
+            "Acudiente": "Ana Rodríguez",
+            "Numero de celular": 3198765432,
+            "Numero de telefono fijo": 62321098,
+            "Estado": "Retirado",
+            "Riesgo": "Riesgo medio"
+        },
+        {
+            "Id": "1090987654",
+            "Nombre completo": "Laura Fernanda Cárdenas Pineda",
+            "Direccion": "Cra 29 ·54-12",
+            "Acudiente": "Javier Pineda",
+            "Numero de celular": 3209876543,
+            "Numero de telefono fijo": 62432109,
+            "Estado": "Cursando",
+            "Riesgo": "Riesgo bajo"
+        }, 
+        {
+          "id": "",
+          "Nombre completo": "",
+          "Direccion": "",
+          "Acudiente": "",
+          "Numero de celular": "",
+          "Numero de telefono fijo": "",
+          "Estado": "",
+          "Riesgo ": ""
+        },
+        {
+          "id": "",
+          "Nombre completo": "",
+          "Direccion": "",
+          "Acudiente": "",
+          "Numero de celular": "",
+          "Numero de telefono fijo": "",
+          "Estado": "",
+          "Riesgo ": ""
+        },
+        {
+          "id": "",
+          "Nombre completo": "",
+          "Direccion": "",
+          "Acudiente": "",
+          "Numero de celular": "",
+          "Numero de telefono fijo": "",
+          "Estado": "",
+          "Riesgo ": ""
+>>>>>>> 4bfcd279cb73e9ba5bff07b57f802a75457e2c07
       },
       {
         "id": "",
