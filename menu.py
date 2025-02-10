@@ -1,85 +1,82 @@
 
-
 from deftrainer import trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, breakpoint, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1
 import json
+
 def abrirJSON():
-    dicFinal = {}
-    with open('./camper.json', 'r') as openFile:
-        dicFinal = json.load(openFile)
+    with open('./camper.json','r',encoding="utf-8") as openFile:
+        dicFinal=json.load(openFile)
     return dicFinal
 
 def guardarJSON(dic):
-    with open('./camper.json', 'w') as outFile:
-        json.dump(dic, outFile)
-        
-camper={}
-camper=abrirJSON()
+    with open("./camper.json",'w',encoding="utf-8") as outFile:
+        json.dump(dic,outFile,indent=4, ensure_ascii=False)
+
+camperNuevo = []
 
 print("Bienvenido al programa de campuslands")
-print("Còmo desea ingresar?")
+print("¿Cómo desea ingresar?")
 print("1. Camper")
 print("2. Trainer")
 print("3. Coordinador")
-opcion = int(input("Digite su opcion: "))
+opcion = int(input("Digite su opción: "))
 
-booleanito=True
-while booleanito==True:
+booleanito = True
+while booleanito:
     if opcion == 1:
+        camperNuevo = abrirJSON()  
         print("¿Qué desea hacer?")
         print("1. Inscripción")
         print("2. Ingresar al perfil")
         print("3. Salir del programa")
-        opcioncam = int(input(":"))
+        opcioncam = int(input(": "))
 
         if opcioncam == 1:
             idn = int(input("Ingrese su número de identificación:"))
-            nombren = (input("Ingrese su(s) nombre(s):"))
-            apellidon =( input("Digite sus apellidos:"))
+            nombren = input("Ingrese su(s) nombre(s):")
+            apellidon = input("Digite sus apellidos:")
             direccion = input("Ingrese su dirección:")
             acudienten = input("Ingrese el nombre de su acudiente:")
             numcel = int(input("Ingrese su número de celular:"))
             numfijo = int(input("Ingrese su número de teléfono fijo:"))
-            
-            camper["Informacion"][idn]={
+            jornada = input("Ingrese la jornada (Mañana 6-10 am, Mediodía 10-2 pm, Tarde 2-6 pm, Noche 6-10 pm): ").capitalize()
+            curso = ""      
+
+            camper = {
+                "ID": idn,
                 "Nombre": nombren,
                 "Apellido": apellidon,
                 "Direccion": direccion,
                 "Acudiente": acudienten,
                 "Numero de celular": numcel,
                 "Numero de telefono fijo": numfijo,
-                "Estado": {
-                "En proceso": False,
-                "Inscrito": True,
-                "Aprovado": False,
-                "Rechazao": False,
-                "Cursando": False,
-                "Graduado": False,
-                "Expulado": False,
-                "Retirado": False
-                }}
-            guardarJSON(camper)
+                "Estado": [{
+                    "En proceso": False,
+                    "Inscrito": True,
+                    "Aprovado": False,
+                    "Rechazado": False,
+                    "Cursando": False,
+                    "Graduado": False,
+                    "Expulado": False,
+                    "Retirado": False
+                }],
+                "Riesgo": "",
+                "Curso": curso,
+                "Jornada": jornada
+                }
+            camperNuevo.append(camper)  
 
-        elif opcioncam==2:
-            print("Bienvenido Camper")
-            identificacion=int (input("Digite su numero de identificacion"))
-            identificacion=abrirJSON()
-            if identificacion== ["Informacion"]:
-                print("Que desea realizar el dia de hoy?") 
-                print("Ver informacion sobre mi curso (1)")
-                print("Ver mis calificaciones (2)")
-                print("Salir del programa (3)") 
-                ele=int(input("Digite su eleccion"))  
-                if ele== 1:
-                    print()
-                if ele== 2:
-                    print()
-                if ele ==3:
-                    exit()  
-        elif opcioncam==3:
-            exit() 
+            guardarJSON(camperNuevo)  
+
+        elif opcioncam == 2:
+            print("Función para ingresar al perfil no implementada aún.")
+        
+        elif opcioncam == 3:
+            print("Gracias por usar el programa.")
+            booleanito = False
+
         else:
-            print("Eleccion invalida")
-            exit()
+            print("Opción no válida.")
+            break
 
           
                         
