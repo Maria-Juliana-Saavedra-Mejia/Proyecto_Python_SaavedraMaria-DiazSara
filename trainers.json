@@ -1,4 +1,5 @@
 {
+ "Trainers":{
     "P_1": {
         "Profesor": "Pedro Gomez",
         "Salon": "Apolo",
@@ -6,6 +7,7 @@
         "Fecha de finalizacion": "14 Noviembre, 2025",
         "Horario": ["Inicio = 6:00 am", "finalizacion : 10:00 am"],
         "Ruta": "Java",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -28,6 +30,7 @@
         "Fecha de finalizacion": "3 Noviembre, 2025",
         "Horario": ["Inicio = 2:00 pm", "finalizacion : 6:00 pm"],
         "Ruta": "Java",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -51,6 +54,7 @@
         "Fecha de finalizacion": "20 Diciembre, 2025",
         "Horario": ["Inicio = 6:00 am", "finalizacion : 10:00 am"],
         "Ruta": "NodeJS",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -72,6 +76,7 @@
         "Fecha de finalizacion": "6 Noviembre, 2025",
         "Horario": ["Inicio = 2:00 pm", "finalizacion : 6:00 pm"],
         "Ruta": "NodeJS",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -93,6 +98,7 @@
         "Fecha de finalizacion": "20 Noviembre, 2025",
         "Horario": ["Inicio = 6:00 am", "finalizacion : 10:00 am"],
         "Ruta": "Java",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -115,6 +121,7 @@
         "Fecha de finalizacion": "20 Enero, 2026",
         "Horario": ["Inicio = 2:00 pm", "finalizacion : 6:00 pm"],
         "Ruta": "Java",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -137,6 +144,7 @@
         "Fecha de finalizacion": "1 Noviembre, 2025",
         "Horario": ["Inicio = 10:00 am", "finalizacion : 2:00 pm"],
         "Ruta": ".NET",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -159,6 +167,7 @@
         "Fecha de finalizacion": "1 Septiembre, 2025",
         "Horario": ["Inicio = 10:00 am", "finalizacion : 2:00 pm"],
         "Ruta": ".NET",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -181,6 +190,7 @@
         "Fecha de finalizacion": "1 Diciembre, 2025",
         "Horario": ["Inicio = 2:00 pm", "finalizacion : 10:00 pm"],
         "Ruta": ".NET",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -203,6 +213,7 @@
         "Fecha de finalizacion": "1 Noviembre, 2025",
         "Horario": ["Inicio = 2:00 pm", "finalizacion : 10:00 pm"],
         "Ruta": ".NET",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -225,6 +236,7 @@
         "Fecha de finalizacion": "5 Diciembre, 2025",
         "Horario": ["Inicio = 10:00 am", "finalizacion : 2:00 pm"],
         "Ruta": "NodeJS",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -246,6 +258,7 @@
         "Fecha de finalizacion": "5 Marzo, 2026",
         "Horario": ["Inicio = 2:00 pm", "finalizacion : 6:00 pm"],
         "Ruta": ".NET",
+        "Campers":[],
         "Modulos": [
             "Introducción a la Programación",
             "Python",
@@ -256,9 +269,11 @@
             "Intro Back",
             "Intro BBDD",
             "MySQL",
-            "c#",
+            "C#",
             "PostgreSQL",
             ".Net Core"
         ]
     }
+}
+
 }

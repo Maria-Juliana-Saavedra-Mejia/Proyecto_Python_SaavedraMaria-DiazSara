@@ -1,5 +1,5 @@
 
-from defcoordinador import agregartrainers
+
 from deftrainer import trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, breakpoint, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1
 import json
 def abrirJSON():
@@ -9,10 +9,11 @@ def abrirJSON():
     return dicFinal
 
 def guardarJSON(dic):
-    with open("./camper.json", 'w') as outFile:
+    with open('./camper.json', 'w') as outFile:
         json.dump(dic, outFile)
         
 camper={}
+camper=abrirJSON()
 
 print("Bienvenido al programa de campuslands")
 print("Còmo desea ingresar?")
@@ -20,8 +21,8 @@ print("1. Camper")
 print("2. Trainer")
 print("3. Coordinador")
 opcion = int(input("Digite su opcion: "))
-booleanito=True
 
+booleanito=True
 while booleanito==True:
     if opcion == 1:
         print("¿Qué desea hacer?")
@@ -31,23 +32,21 @@ while booleanito==True:
         opcioncam = int(input(":"))
 
         if opcioncam == 1:
-            newcamper = abrirJSON()
-
             idn = int(input("Ingrese su número de identificación:"))
             nombren = (input("Ingrese su(s) nombre(s):"))
             apellidon =( input("Digite sus apellidos:"))
             direccion = input("Ingrese su dirección:")
             acudienten = input("Ingrese el nombre de su acudiente:")
             numcel = int(input("Ingrese su número de celular:"))
-            numfijo = int(input("Ingrese su número de teléfono:"))
-
-            newcamper["Informacion"][idn]={
+            numfijo = int(input("Ingrese su número de teléfono fijo:"))
+            
+            camper["Informacion"][idn]={
                 "Nombre": nombren,
                 "Apellido": apellidon,
                 "Direccion": direccion,
                 "Acudiente": acudienten,
                 "Numero de celular": numcel,
-                "Numero de telefono": numfijo,
+                "Numero de telefono fijo": numfijo,
                 "Estado": {
                 "En proceso": False,
                 "Inscrito": True,
@@ -58,12 +57,30 @@ while booleanito==True:
                 "Expulado": False,
                 "Retirado": False
                 }}
-            guardarJSON(newcamper)
+            guardarJSON(camper)
+
         elif opcioncam==2:
             print("Bienvenido Camper")
             identificacion=int (input("Digite su numero de identificacion"))
             identificacion=abrirJSON()
-    
+            if identificacion== ["Informacion"]:
+                print("Que desea realizar el dia de hoy?") 
+                print("Ver informacion sobre mi curso (1)")
+                print("Ver mis calificaciones (2)")
+                print("Salir del programa (3)") 
+                ele=int(input("Digite su eleccion"))  
+                if ele== 1:
+                    print()
+                if ele== 2:
+                    print()
+                if ele ==3:
+                    exit()  
+        elif opcioncam==3:
+            exit() 
+        else:
+            print("Eleccion invalida")
+            exit()
+
           
                         
 
@@ -93,9 +110,10 @@ while booleanito==True:
             print("")
             ## imprimir horario y clases
         elif clase==4:
-            breakpoint()  
+            exit() 
         else:
             print("Eleccion invalida")
+            exit()
 
      elif n1==2:
         print("Bienvenido trainer Miguel Rodriguez")
@@ -112,9 +130,10 @@ while booleanito==True:
             print("")
             ## imprimir horario y clases
         elif clase==4:
-            breakpoint()  
+            exit()  
         else:
             print("Eleccion invalida")
+            exit()
             
      elif n1==3:
         print ("Bienvenido trainer Juan Nariño")
@@ -131,9 +150,10 @@ while booleanito==True:
             print("")
             ## imprimir horario y clases
         elif clase==4:
-            breakpoint()  
+            exit()  
         else:
             print("Eleccion invalida")
+            exit()
         
 
      elif n1==4:
@@ -151,9 +171,10 @@ while booleanito==True:
             print("")
             ## imprimir horario y clases
         elif clase==4:
-            breakpoint()  
+            exit() 
         else:
             print("Eleccion invalida")
+            exit()
                
      elif n1==5:
         print ("Bienvenido trainer Carlos Rueda")
@@ -170,9 +191,10 @@ while booleanito==True:
             print("")
             ## imprimir horario y clases
         elif clase==4:
-            breakpoint()  
+            exit() 
         else:
             print("Eleccion invalida")
+            exit()
      elif n1==6:
         print ("Bienvenida trainer Antonio Vega")
         print("Para agregar notas a clase A_1 ingrese (1)")
@@ -188,30 +210,16 @@ while booleanito==True:
             print("")
             ## imprimir horario y clases
         elif clase==4:
-            breakpoint()  
+            exit()  
         else:
             print("Eleccion invalida")
+            exit()
     
  
      else:
         print("Codigo incorrecto")
-        breakpoint()
-    elif opcion==3:
-        print("Bienvenido coordinador")
-        print("Que quieres hacer:")
-        print("1.Agregar trainers")
-        print("2.Eliminar ca")
-        print("2.Registrar nota campers")
-        print("3.Revisar inscripcion")
-        print("4.Mostrar campers")
-        print("5.Crear nueva ruta")
-        print("6.Modulo matriculas")
-        print("7.Modulo reportes")
-        opciontra=int(input(":"))
-        if opciontra==1:
-            agregartrainers()
-        if opciontra==2:
-           agregartrainers()
+        exit()
+    
 
         
 
