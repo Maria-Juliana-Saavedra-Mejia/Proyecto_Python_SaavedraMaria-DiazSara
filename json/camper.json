@@ -1,0 +1,72 @@
+[
+    {
+        "ID": "6677889501",
+        "Nombre": "Andrés Felipe",
+        "Apellido": "Garcia Vargas",
+        "Direccion": "Cra 15 #18-09",
+        "Acudiente": "María Garcia",
+        "Numero de celular": 3152334455,
+        "Numero de telefono fijo": 6123456789,
+        "Estado": {
+            "En proceso": false,
+            "Inscrito": false,
+            "Aprobado": false,
+            "Rechazado": false,
+            "Cursando": false,
+            "Graduado": false,
+            "Expulado": false,
+            "Retirado": false
+        },
+        "Riesgo": "",
+        "Curso": "",
+        "Nota teorica": "",
+        "Nota Practica": ""
+    },
+    {
+        "ID": 1099741170,
+        "Nombre": "Sara Sofia",
+        "Apellido": "Diaz Rodriguez",
+        "Direccion": "Cra 22 ·34-34",
+        "Acudiente": "Adriana Rodriguez",
+        "Numero de celular": 32454444,
+        "Numero de telefono fijo": 654565545,
+        "Estado": {
+            "En proceso": false,
+            "Inscrito": true,
+            "Aprobado": false,
+            "Rechazado": false,
+            "Cursando": false,
+            "Graduado": false,
+            "Expulado": false,
+            "Retirado": false
+        },
+        "Riesgo": "",
+        "Curso": "",
+        "Nota teorica": "",
+        "Nota Practica": ""
+    },
+    {
+        "ID": 2294323409,
+        "Nombre": "PEdrito",
+        "Apellido": "Gomez",
+        "Direccion": "Calle",
+        "Acudiente": "PEdro",
+        "Numero de celular": 290923409,
+        "Numero de telefono fijo": 2439524359,
+        "Estado": {
+            "En proceso": false,
+            "Inscrito": true,
+            "Aprobado": false,
+            "Rechazado": false,
+            "Cursando": false,
+            "Graduado": false,
+            "Expulado": false,
+            "Retirado": false
+        },
+        "Riesgo": "",
+        "Curso": "",
+        "Nota teorica": "",
+        "Nota Practica": ""
+    }
+]
+

@@ -1,6 +1,6 @@
 {
- "Trainers":{
-    "P_1": {
+ "salones":[
+     {  "grupo":"P_1",
         "Profesor": "Pedro Gomez",
         "Salon": "Apolo",
         "Fecha de inicio": "14 enero, 2024",
@@ -23,7 +23,8 @@
             "SpringBoot"
         ]
     },
-    "P_2": {
+     {
+        "grupo":"P_2",
         "Profesor": "Pedro Gomez",
         "Salon": "Apolo",
         "Fecha de inicio": "23 Diciembre, 2024",
@@ -47,7 +48,7 @@
         
         ]
     },
-    "M_1": {
+     {  "grupo":"M_1",
         "Profesor": "Miguel Rodriguez",
         "Salon": "Artemis",
         "Fecha de inicio": "25 febrero, 2025",
@@ -69,7 +70,7 @@
             "Express"
         ]
     },
-    "M_2": {
+ {      "grupo":"M_2",
         "Profesor": "Miguel Rodriguez",
         "Salon": "Artemis",
         "Fecha de inicio": "6 enero, 2025",
@@ -91,7 +92,7 @@
             "Express"
         ]
     },
-    "J_1": {
+   {    "grupo":"J_1",
         "Profesor": "Juan Nariño",
         "Salon": "Sputnik",
         "Fecha de inicio": "20 enero, 2025",
@@ -114,7 +115,7 @@
             "SpringBoot"
         ]
     },
-    "J_2": {
+      { "grupo":"J_2",
         "Profesor": "Juan Nariño",
         "Salon": "Sputnik",
         "Fecha de inicio": "13 Marzo, 2025",
@@ -137,7 +138,7 @@
             "SpringBoot"
         ]
     },
-    "S_1": {
+        {"grupo":"S_1",
         "Profesor": "Santiago Melo",
         "Salon": "Artemis",
         "Fecha de inicio": "30 Diciembre, 2024",
@@ -160,7 +161,8 @@
             ".Net Core"
         ]
     },
-    "S_2": {
+{
+    "grupo":"S_2",
         "Profesor": "Santiago Melo",
         "Salon": "Artemis",
         "Fecha de inicio": "15 diciembre, 2024",
@@ -183,7 +185,8 @@
             ".Net Core"
         ]
     },
-    "C_1": {
+    {
+        "grupo":"C_1",
         "Profesor": "Carlos Rueda",
         "Salon": "Artemis",
         "Fecha de inicio": "10 Febrero, 2025",
@@ -206,7 +209,8 @@
             "SpringBoot"
         ]
     },
-    "C_2": {
+   { 
+        "grupo":"C_2",
         "Profesor": "Carlos Rueda",
         "Salon": "Artemis",
         "Fecha de inicio": "26 diciembre, 2024",
@@ -229,7 +233,7 @@
             "SpringBoot"
         ]
     },
-    "A_1": {
+   {    "grupo":"A_1",
         "Profesor": "Antonio Vega",
         "Salon": "Sputnik",
         "Fecha de inicio": "8 Febrero, 2025",
@@ -251,7 +255,7 @@
             "Express"
         ]
     },
-    "A_2": {
+    {   "grupo":"A_2",
         "Profesor": "Antonio Vega",
         "Salon": "Sputnik",
         "Fecha de inicio": "8 Mayo, 2025",
@@ -274,6 +278,6 @@
             ".Net Core"
         ]
     }
-}
+]
 
 }

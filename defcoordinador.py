@@ -1,13 +1,22 @@
 import json
+
 def abrirJSON():
-    dicFinal={}
-    with open('./trainers.json','r') as openFile:
+    with open('./json/camper.json','r') as openFile:
         dicFinal=json.load(openFile)
     return dicFinal
 
 def guardarJSON(dic):
-    with open("./trainers.json",'w') as outFile:
-        json.dump(dic,outFile)
+    with open("./json/camper.json",'w') as outFile:
+        json.dump(dic,outFile,indent=4, ensure_ascii=False)
+
+def abrirJSON():
+    with open('./json/salones.json','r') as openFile:
+        dicFinal=json.load(openFile)
+    return dicFinal
+
+def guardarJSON(dic):
+    with open("./json/salones.json",'w') as outFile:
+        json.dump(dic,outFile,indent=4, ensure_ascii=False)
 
 def agregartrainers ():       
     newtrainer = abrirJSON()
