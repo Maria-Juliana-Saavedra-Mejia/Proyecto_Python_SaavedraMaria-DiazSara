@@ -1,6 +1,6 @@
 [
     {
-        "ID": "6677889501",
+        "ID": 6677889501,
         "Nombre": "Andrés Felipe",
         "Apellido": "Garcia Vargas",
         "Direccion": "Cra 15 #18-09",
@@ -33,7 +33,7 @@
         "Estado": {
             "En proceso": false,
             "Inscrito": true,
-            "Aprobado": false,
+            "Aprobado": true,
             "Rechazado": false,
             "Cursando": false,
             "Graduado": false,
@@ -67,6 +67,28 @@
         "Curso": "",
         "Nota teorica": "",
         "Nota Practica": ""
+    },
+    {
+        "ID": 1099545456,
+        "Nombre": "Nicolas",
+        "Apellido": "Carreño ",
+        "Direccion": "Cra 34",
+        "Acudiente": "Pedro Jose Diaz Rodriguez",
+        "Numero de celular": 3245456576,
+        "Numero de telefono fijo": 6789098767,
+        "Estado": {
+            "En proceso": false,
+            "Inscrito": true,
+            "Aprovado": false,
+            "Rechazado": false,
+            "Cursando": false,
+            "Graduado": false,
+            "Expulado": false,
+            "Retirado": false
+        },
+        "Riesgo": "",
+        "Curso": "",
+        "Nota teorica": "",
+        "Nota Practica": ""
     }
 ]
-

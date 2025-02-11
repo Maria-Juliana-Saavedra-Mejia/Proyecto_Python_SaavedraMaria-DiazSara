@@ -36,15 +36,26 @@ while booleanito:
             documento=int(input("Digite su numero de identidad"))
             
             for i in range(len(campers)):
-                if campers[i]["Esta"]:
-                    print()
                 if documento==campers[i]["ID"]:
-                    print(campers[i]["Nombre"])
-                    x=campers[i]["Curso"]
-                    print(x)
-                    for i in range(salones["salones"]):
-                        if x==salones["salones"][i]["grupo"]:
-                            print("EL grupo es: ",salones["salones"]["grupo"])
+                    if campers[i]["Estado"]["Aprobado"]==True:
+                        print(campers[i]["Nombre"])
+                        x=campers[i]["Curso"]
+                        print(x)
+                        for i in range(salones["salones"]):
+                            if x==salones["salones"][i]["grupo"]:
+                                print("EL grupo es: ",salones["salones"]["grupo"])
+                                print("EL grupo es: ",salones["salones"]["Profesor"])
+                                print("EL grupo es: ",salones["salones"]["Salon"])
+                                print("EL grupo es: ",salones["salones"]["Fecha de inicio"])
+                                print("EL grupo es: ",salones["salones"]["Fecha de finalizacion"])
+                                print("EL grupo es: ",salones["salones"]["Ruta"])
+                                print("EL grupo es: ",salones["salones"]["Modulos"])
+                                campers["Modulos"]
+                                guardarJSON(campers)
+                    else:
+                        print("No se le ha asignado un grupo")
+                else:
+                    print("Documento no registrado")
 
        elif opcioncam == 3:
                 print("Gracias por usar el programa.")
@@ -59,125 +70,128 @@ while booleanito:
     elif opcion==2:
         menu_trainer()
         n1=int(input(": "))
-    if n1==1:
-        trainerAgregarNotasp()
-        if clase==1:
-            trainerAgregarNotasp()
-        elif clase==2:
-            trainerAgregarNotasp1()
-        elif clase==3:
-            print("")
-            ## imprimir horario y clases
-        elif clase==4:
-            exit() 
-        else:
-            print("Eleccion invalida")
-            exit()
-        n1=int(input(": "))
-    elif n1==2:
-        print("Bienvenido trainer Miguel Rodriguez")
-        print("Para agregar notas a clase M_1 ingrese (1)")
-        print("Para agregar notas a clase M_2 ingrese (2)")
-        print("Para ver su horario digite (3)")
-        print ("Para salir digite (4)")
-        clase=int(input("Digite su eleccion: "))
-        if clase==1:
-            trainerAgregarNotasm()
-        elif clase==2:
-            trainerAgregarNotasm1()
-        elif clase==3:
-            print("")
-            ## imprimir horario y clases
-        elif clase==4:
-            exit()  
-        else:
-            print("Eleccion invalida")
-            exit()
+        if n1==1:
+            print("Bienvenido trainer Pedro Gomez")
+            print("Para agregar notas a clase P_1 ingrese (1)")
+            print("Para agregar notas a clase P_2 ingrese (2)")
+            print("Para ver su horario digite (3)")
+            print ("Para salir digite (4)")
+            clase=int(input("Digite su eleccion: "))
+            if clase==1:
+                trainerAgregarNotasp()
+            elif clase==2:
+                trainerAgregarNotasp1()
+            elif clase==3:
+                print("")
+                ## imprimir horario y clases
+            elif clase==4:
+                exit() 
+            else:
+                print("Eleccion invalida")
+                exit()
+        elif n1==2:
+            print("Bienvenido trainer Miguel Rodriguez")
+            print("Para agregar notas a clase M_1 ingrese (1)")
+            print("Para agregar notas a clase M_2 ingrese (2)")
+            print("Para ver su horario digite (3)")
+            print ("Para salir digite (4)")
+            clase=int(input("Digite su eleccion: "))
+            if clase==1:
+                trainerAgregarNotasm()
+            elif clase==2:
+                trainerAgregarNotasm1()
+            elif clase==3:
+                print("")
+                ## imprimir horario y clases
+            elif clase==4:
+                exit()  
+            else:
+                print("Eleccion invalida")
+                exit()
             
-    elif n1==3:
-        print ("Bienvenido trainer Juan Nariño")
-        print("Para agregar notas a clase J_1 ingrese (1)")
-        print("Para agregar notas a clase J_2 ingrese (2)")
-        print("Para ver su horario digite (3)")
-        print ("Para salir digite (4)")
-        clase=int(input("Digite su eleccion: "))
-        if clase==1:
-            trainerAgregarNotasJ()
-        elif clase==2:
-            trainerAgregarNotasJ1()
-        elif clase==3:
-            print("")
-            ## imprimir horario y clases
-        elif clase==4:
-            exit()  
-        else:
-            print("Eleccion invalida")
-            exit()
+        elif n1==3:
+            print ("Bienvenido trainer Juan Nariño")
+            print("Para agregar notas a clase J_1 ingrese (1)")
+            print("Para agregar notas a clase J_2 ingrese (2)")
+            print("Para ver su horario digite (3)")
+            print ("Para salir digite (4)")
+            clase=int(input("Digite su eleccion: "))
+            if clase==1:
+                trainerAgregarNotasJ()
+            elif clase==2:
+                trainerAgregarNotasJ1()
+            elif clase==3:
+                print("")
+                ## imprimir horario y clases
+            elif clase==4:
+                exit()  
+            else:
+                print("Eleccion invalida")
+                exit()
         
-
-    elif n1==4:
-        print ("Bienvenido trainer Santiago Melo")
-        print("Para agregar notas a clase S_1 ingrese (1)")
-        print("Para agregar notas a clase S_2 ingrese (2)")
-        print("Para ver su horario digite (3)")
-        print ("Para salir digite (4)")
-        clase=int(input("Digite su eleccion: "))
-        if clase==1:
-            trainerAgregarNotasS()
-        elif clase==2:
-            trainerAgregarNotasS1()
-        elif clase==3:
-            print("")
-            ## imprimir horario y clases
-        elif clase==4:
-            exit() 
-        else:
-            print("Eleccion invalida")
-            exit()
+        elif n1==4:
+            print ("Bienvenido trainer Santiago Melo")
+            print("Para agregar notas a clase S_1 ingrese (1)")
+            print("Para agregar notas a clase S_2 ingrese (2)")
+            print("Para ver su horario digite (3)")
+            print ("Para salir digite (4)")
+            clase=int(input("Digite su eleccion: "))
+            if clase==1:
+                trainerAgregarNotasS()
+            elif clase==2:
+                trainerAgregarNotasS1()
+            elif clase==3:
+                print("")
+                ## imprimir horario y clases
+            elif clase==4:
+                exit() 
+            else:
+                print("Eleccion invalida")
+                exit()
                
-    elif n1==5:
-        print ("Bienvenido trainer Carlos Rueda")
-        print("Para agregar notas a clase S_1 ingrese (1)")
-        print("Para agregar notas a clase S_2 ingrese (2)")
-        print("Para ver su horario digite (3)")
-        print ("Para salir digite (4)")
-        clase=int(input("Digite su eleccion: "))
-        if clase==1:
-            trainerAgregarNotasC()
-        elif clase==2:
-            trainerAgregarNotasC1()
-        elif clase==3:
-            print("")
-            ## imprimir horario y clases
-        elif clase==4:
-            exit() 
-        else:
-            print("Eleccion invalida")
-            exit()
-    elif n1==6:
-        print ("Bienvenida trainer Antonio Vega")
-        print("Para agregar notas a clase A_1 ingrese (1)")
-        print("Para agregar notas a clase A_2 ingrese (2)")
-        print("Para ver su horario digite (3)")
-        print ("Para salir digite (4)")
-        clase=int(input("Digite su eleccion: "))
-        if clase==1:
-            trainerAgregarNotasA()
-        elif clase==2:
-            trainerAgregarNotasA1()
-        elif clase==3:
-            print("")
-            ## imprimir horario y clases
-        elif clase==4:
-            exit()  
-        else:
-            print("Eleccion invalida")
-            exit()
+        elif n1==5:
+            print ("Bienvenido trainer Carlos Rueda")
+            print("Para agregar notas a clase S_1 ingrese (1)")
+            print("Para agregar notas a clase S_2 ingrese (2)")
+            print("Para ver su horario digite (3)")
+            print ("Para salir digite (4)")
+            clase=int(input("Digite su eleccion: "))
+            if clase==1:
+                trainerAgregarNotasC()
+            elif clase==2:
+                trainerAgregarNotasC1()
+            elif clase==3:
+                print("")
+                ## imprimir horario y clases
+            elif clase==4:
+                exit() 
+            else:
+                print("Eleccion invalida")
+                exit()
+        elif n1==6:
+            print ("Bienvenida trainer Antonio Vega")
+            print("Para agregar notas a clase A_1 ingrese (1)")
+            print("Para agregar notas a clase A_2 ingrese (2)")
+            print("Para ver su horario digite (3)")
+            print ("Para salir digite (4)")
+            clase=int(input("Digite su eleccion: "))
+            if clase==1:
+                trainerAgregarNotasA()
+            elif clase==2:
+                trainerAgregarNotasA1()
+            elif clase==3:
+                print("")
+                ## imprimir horario y clases
+            elif clase==4:
+                exit()  
+            else:
+                print("Eleccion invalida")
+                exit()
     
  
-    else:
-        print("Codigo incorrecto")
-        exit()
+        else:
+            print("Codigo incorrecto")
+            exit()
     
 
 

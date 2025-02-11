@@ -1,4 +1,4 @@
-from main import*
+
 import json
 def abrirJSON():
     with open('./json/camper.json','r') as openFile:
@@ -65,7 +65,7 @@ def inscripcion_camper():
                     "Estado": {
                         "En proceso": False,
                         "Inscrito": True,
-                        "Aprovado": False,
+                        "Aprobado": False,
                         "Rechazado": False,
                         "Cursando": False,
                         "Graduado": False,
@@ -92,12 +92,7 @@ def menu_p():
     print ("Para salir digite (4)") 
     
 def trainerAgregarNotasp():
-            print("Bienvenido trainer Pedro Gomez")
-            print("Para agregar notas a clase P_1 ingrese (1)")
-            print("Para agregar notas a clase P_2 ingrese (2)")
-            print("Para ver su horario digite (3)")
-            print ("Para salir digite (4)")
-            clase=int(input("Digite su eleccion: "))
+
             print ("Estos son los campers de la clase P_1")
             est=int(input("Digite el numero del camper al que le quiere ingresar una nota"))
             print ("1. para trabajos")
