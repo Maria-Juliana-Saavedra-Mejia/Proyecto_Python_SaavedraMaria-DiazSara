@@ -1,24 +1,6 @@
-from modulos import menu_principal, menu_trainer, menu_camper,inscripcion_camper, trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, breakpoint, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1
+from modulos import menu_principal, menu_trainer, menu_camper,inscripcion_camper, trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1, abrirJSON, abrirJSO
+from defcoordinador import menu_coordinador, menu_coordinador_opc_1, agregartrainers, agregar_modulo_a_todos_salones
 import json
-
-def abrirJSON():
-    with open('./json/camper.json','r') as openFile:
-        dicFinal=json.load(openFile)
-    return dicFinal
-
-def guardarJSON(dic):
-    with open("./json/camper.json",'w') as outFile:
-        json.dump(dic,outFile,indent=4, ensure_ascii=False)
-
-def abrirJSO():
-    with open('./json/salones.json','r') as openFile:
-        dicFinal=json.load(openFile)
-    return dicFinal
-
-def guardarJSO(dic):
-    with open("./json/salones.json",'w') as outFile:
-        json.dump(dic,outFile,indent=4, ensure_ascii=False)
-
 
 campers = abrirJSON()  
 salones=abrirJSO()
@@ -27,46 +9,59 @@ opcion = int(input("Digite su opción: "))
 
 booleanito = True
 while booleanito:
-    if opcion == 1:
-       menu_camper()
-       opcioncam = int(input(": "))
-       if opcioncam == 1:
+    if  opcion == 1:
+        menu_camper()
+        opcioncam = int(input(": "))
+        if opcioncam == 1:
             inscripcion_camper()
-       elif opcioncam == 2:
-            documento=int(input("Digite su numero de identidad"))
-            
-            for i in range(len(campers)):
-                if documento==campers[i]["ID"]:
-                    if campers[i]["Estado"]["Aprobado"]==True:
-                        print(campers[i]["Nombre"])
-                        x=campers[i]["Curso"]
-                        print(x)
-                        for i in range(salones["salones"]):
-                            if x==salones["salones"][i]["grupo"]:
-                                print("EL grupo es: ",salones["salones"]["grupo"])
-                                print("EL grupo es: ",salones["salones"]["Profesor"])
-                                print("EL grupo es: ",salones["salones"]["Salon"])
-                                print("EL grupo es: ",salones["salones"]["Fecha de inicio"])
-                                print("EL grupo es: ",salones["salones"]["Fecha de finalizacion"])
-                                print("EL grupo es: ",salones["salones"]["Ruta"])
-                                print("EL grupo es: ",salones["salones"]["Modulos"])
-                                campers["Modulos"]
-                                guardarJSON(campers)
+
+
+
+
+
+
+
+
+        elif opcioncam == 2:
+            campers = abrirJSON() 
+            documento = int(input("Digite su numero de identidad -> "))
+            encontrado = False  # Bandera para verificar si se encontró el estudiante
+            for estudiante in campers:
+                if estudiante["ID"] == documento:
+                    # Acceder al diccionario "Estado"
+                    estados = estudiante["Estado"]
+                    encontrado = True
+
+                    # Revisar si "Aprobado" es True
+                    if estados["Aprobado"]:  # Solo si Aprobado es True
+                        print(f"El estudiante con ID {documento} está aprobado.")
                     else:
-                        print("No se le ha asignado un grupo")
-                else:
-                    print("Documento no registrado")
+                        print(f"El estado de aprobación del estudiante con ID {documento} es False.")
+                    
+                    break  # Salir del ciclo una vez que se encuentra el estudiante
 
-       elif opcioncam == 3:
-                print("Gracias por usar el programa.")
-                booleanito = False
+            if not encontrado:
+                print("Estudiante con ese ID no encontrado.")
 
-       else:
-                print("Opción no válida.")
-                break
 
-          
-                        
+
+        elif opcioncam==3:
+            def retirar_camper(campers, documento):
+                encontrado = False
+                for estudiante in campers:
+                    if estudiante["ID"] == documento:
+            # Acceder al diccionario "Estado"
+                        estados = estudiante["Estado"]
+            # Cambiar estado de "En proceso" a False
+            estados["En proceso"] = False
+            # Cambiar estado de "Retirado" a True
+            estados["Retirado"] = True
+            encontrado = True
+            print(f"El estudiante con ID {documento} ha sido retirado.")
+            break  # Salir del ciclo una vez que se encuentra el estudiante
+    
+        if not encontrado:
+            print(f"No se encontró un estudiante con ID {documento}.")           
     elif opcion==2:
         menu_trainer()
         n1=int(input(": "))
@@ -192,9 +187,13 @@ while booleanito:
         else:
             print("Codigo incorrecto")
             exit()
-    
-
-
-            
-
-        
+    elif opcion == 3:
+        opcionC = menu_coordinador()
+        if opcionC == 1:
+            menu_coordinador_opc_1()
+        elif opcionC == 2:
+            agregartrainers()
+        elif opcionC == 3:
+            # Llamada de la función
+            nuevo_modulo = input("Ingrese el nombre del nuevo módulo a agregar a todos los salones: ")
+            agregar_modulo_a_todos_salones(nuevo_modulo)

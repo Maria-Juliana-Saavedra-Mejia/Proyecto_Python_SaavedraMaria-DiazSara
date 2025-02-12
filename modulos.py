@@ -33,7 +33,8 @@ def menu_camper():
     print("¿Qué desea hacer?")
     print("1. Inscripción")
     print("2. Ingresar al perfil")
-    print("3. Salir del programa")
+    print("3. Salir de campus")
+    print("4. Salir del programa")
 
 
 def menu_trainer():
@@ -46,62 +47,103 @@ def menu_trainer():
     print("6. Antonio Vega")
 
 def inscripcion_camper():
-                idn = int(input("Ingrese su número de identificación:"))
-                nombren = input("Ingrese su(s) nombre(s):")
-                apellidon = input("Digite sus apellidos:")
-                direccion = input("Ingrese su dirección:")
-                acudienten = input("Ingrese el nombre de su acudiente:")
-                numcel = int(input("Ingrese su número de celular:"))
-                numfijo = int(input("Ingrese su número de teléfono fijo:"))
-                curso = ""      
-                camper = {
-                    "ID": idn,
-                    "Nombre": nombren,
-                    "Apellido": apellidon,
-                    "Direccion": direccion,
-                    "Acudiente": acudienten,
-                    "Numero de celular": numcel,
-                    "Numero de telefono fijo": numfijo,
-                    "Estado": {
-                        "En proceso": False,
-                        "Inscrito": True,
-                        "Aprobado": False,
-                        "Rechazado": False,
-                        "Cursando": False,
-                        "Graduado": False,
-                        "Expulado": False,
-                        "Retirado": False
-                    },
-                    "Riesgo": "",
-                    "Curso": "",
-                    "Nota teorica": "",
-                    "Nota Practica": ""
-                } 
-                campers.append(camper)
-                guardarJSON(campers)  
-                print("Camper inscrito exitosamente!")
+    idn = int(input("Ingrese su número de identificación:"))
+    nombren = input("Ingrese su(s) nombre(s):")
+    apellidon = input("Digite sus apellidos:")
+    direccion = input("Ingrese su dirección:")
+    acudienten = input("Ingrese el nombre de su acudiente:")
+    numcel = int(input("Ingrese su número de celular:"))
+    numfijo = int(input("Ingrese su número de teléfono fijo:"))
+    curso = ""  # Puedes asignar el curso más tarde si es necesario
+
+    # Verificar si algún campo está vacío
+    if not (nombren and apellidon and direccion and acudienten and numcel and numfijo):
+        # Si algún campo está vacío, marcar "En proceso" como True y los demás estados como False
+        camper = {
+            "ID": idn,
+            "Nombre": nombren,
+            "Apellido": apellidon,
+            "Direccion": direccion,
+            "Acudiente": acudienten,
+            "Numero de celular": numcel,
+            "Numero de telefono fijo": numfijo,
+            "Estado": {
+                "En proceso": True,
+                "Inscrito": False,
+                "Aprobado": False,
+                "Rechazado": False,
+                "Cursando": False,
+                "Graduado": False,
+                "Expulado": False,
+                "Retirado": False
+            },
+            "Riesgo": False,
+            "Curso": curso,
+            "notas": {
+                "modulo1": 0.0,
+                "modulo2": 0.0,
+                "modulo3": 0.0,
+                "modulo4": 0.0,
+                "modulo5": 0.0
+            }
+        }
+    else:
+        # Si todos los campos están completos, marcar "Inscrito" como True y los demás estados como False
+        camper = {
+            "ID": idn,
+            "Nombre": nombren,
+            "Apellido": apellidon,
+            "Direccion": direccion,
+            "Acudiente": acudienten,
+            "Numero de celular": numcel,
+            "Numero de telefono fijo": numfijo,
+            "Estado": {
+                "En proceso": False,
+                "Inscrito": True,
+                "Aprobado": False,
+                "Rechazado": False,
+                "Cursando": False,
+                "Graduado": False,
+                "Expulado": False,
+                "Retirado": False
+            },
+            "Riesgo": False,
+            "Curso": curso,
+            "notas": {
+                "modulo1": 0.0,
+                "modulo2": 0.0,
+                "modulo3": 0.0,
+                "modulo4": 0.0,
+                "modulo5": 0.0
+            }
+        }
+    
+    # Cargar los campers existentes (asumiendo que ya tienes la lista de campers)
+    campers = abrirJSON()  # Asegúrate de tener esta función que abre el archivo JSON
+    campers.append(camper)
+    
+    # Guardar los campers actualizados en el archivo JSON
+    guardarJSON(campers) 
+    print("Camper inscrito exitosamente!")
+
 
 def breakpoint ():
      return
 
-def menu_p():
-    print("Bienvenido trainer Pedro Gomez")
-    print("Para agregar notas a clase P_1 ingrese (1)")
-    print("Para agregar notas a clase P_2 ingrese (2)")
-    print("Para ver su horario digite (3)")
-    print ("Para salir digite (4)") 
-    
 def trainerAgregarNotasp():
 
             print ("Estos son los campers de la clase P_1")
             est=int(input("Digite el numero del camper al que le quiere ingresar una nota"))
-            print ("1. para trabajos")
-            print ("2. para proyectos")
-            print ("3. para otros")
+            print ("1. Trabajos")
+            print ("2. Proyectos")
+            print ("3. Otros")
             nota=int(input("Ingrese que nota quiere agregar: "))
             if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
 
+                trabajos=int(input("Digite la nota del trabajo: "))
+            
+
+            
             elif nota==2:
                 proyectos=int(input("Digite la nota del proyecto: "))
 
@@ -110,6 +152,7 @@ def trainerAgregarNotasp():
 
             else:
                 print("Codigo incorrecto")
+
 def trainerAgregarNotasp1():
             print ("Estos son los campers de la clase P_2")
        
@@ -332,19 +375,3 @@ def trainerAgregarNotasA1():
     else:
          print("Codigo incorrecto")
 
-
-
-
-def menu_coordinador():
-    print("Bienvenido coordinador")
-    print("Que quieres hacer:")
-    print("1.Agregar trainers")
-    print("2.Eliminar campers")
-    print("3.Revisar inscripcion")
-    print("4.Mostrar campers")
-    print("5.Crear nueva ruta")
-    print("6.Modulo matriculas")
-    print("7.Modulo reportes")
-    opciontra=int(input(":"))
-
- 

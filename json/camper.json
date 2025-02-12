@@ -10,26 +10,59 @@
         "Estado": {
             "En proceso": false,
             "Inscrito": false,
-            "Aprobado": false,
+            "Aprobado": true,
+            "Rechazado": false,
+            "Cursando": false,
+            "Graduado": false,
+            "Expulsado": false,
+            "Retirado": false
+        },
+        "Riesgo": false,
+        "Curso": "P_1",
+        "notas": {
+            "modulo1": 100.0,
+            "modulo2": 0.0,
+            "modulo3": 0.0,
+            "modulo4": 0.0,
+            "modulo5": 0.0
+        }
+    },
+    {
+        "ID": 346436,
+        "Nombre": "fguhu",
+        "Apellido": "kdfjshsth",
+        "Direccion": "jkhnkgfgn",
+        "Acudiente": "fkgjrtjgr",
+        "Numero de celular": 4375348753,
+        "Numero de telefono fijo": 454698734,
+        "Estado": {
+            "En proceso": true,
+            "Inscrito": true,
+            "Aprobado": true,
             "Rechazado": false,
             "Cursando": false,
             "Graduado": false,
             "Expulado": false,
             "Retirado": false
         },
-        "Riesgo": "",
-        "Curso": "",
-        "Nota teorica": "",
-        "Nota Practica": ""
+        "Riesgo": false,
+        "Curso": "M_2",
+        "notas": {
+            "modulo1": 100.0,
+            "modulo2": 0.0,
+            "modulo3": 0.0,
+            "modulo4": 0.0,
+            "modulo5": 0.0
+        }
     },
     {
-        "ID": 1099741170,
-        "Nombre": "Sara Sofia",
-        "Apellido": "Diaz Rodriguez",
-        "Direccion": "Cra 22 ·34-34",
-        "Acudiente": "Adriana Rodriguez",
-        "Numero de celular": 32454444,
-        "Numero de telefono fijo": 654565545,
+        "ID": 1,
+        "Nombre": "a",
+        "Apellido": "a",
+        "Direccion": "a",
+        "Acudiente": "a",
+        "Numero de celular": 1,
+        "Numero de telefono fijo": 1,
         "Estado": {
             "En proceso": false,
             "Inscrito": true,
@@ -40,55 +73,14 @@
             "Expulado": false,
             "Retirado": false
         },
-        "Riesgo": "",
+        "Riesgo": false,
         "Curso": "",
-        "Nota teorica": "",
-        "Nota Practica": ""
-    },
-    {
-        "ID": 2294323409,
-        "Nombre": "PEdrito",
-        "Apellido": "Gomez",
-        "Direccion": "Calle",
-        "Acudiente": "PEdro",
-        "Numero de celular": 290923409,
-        "Numero de telefono fijo": 2439524359,
-        "Estado": {
-            "En proceso": false,
-            "Inscrito": true,
-            "Aprobado": false,
-            "Rechazado": false,
-            "Cursando": false,
-            "Graduado": false,
-            "Expulado": false,
-            "Retirado": false
-        },
-        "Riesgo": "",
-        "Curso": "",
-        "Nota teorica": "",
-        "Nota Practica": ""
-    },
-    {
-        "ID": 1099545456,
-        "Nombre": "Nicolas",
-        "Apellido": "Carreño ",
-        "Direccion": "Cra 34",
-        "Acudiente": "Pedro Jose Diaz Rodriguez",
-        "Numero de celular": 3245456576,
-        "Numero de telefono fijo": 6789098767,
-        "Estado": {
-            "En proceso": false,
-            "Inscrito": true,
-            "Aprovado": false,
-            "Rechazado": false,
-            "Cursando": false,
-            "Graduado": false,
-            "Expulado": false,
-            "Retirado": false
-        },
-        "Riesgo": "",
-        "Curso": "",
-        "Nota teorica": "",
-        "Nota Practica": ""
+        "notas": {
+            "modulo1": 0.0,
+            "modulo2": 0.0,
+            "modulo3": 0.0,
+            "modulo4": 0.0,
+            "modulo5": 0.0
+        }
     }
 ]
