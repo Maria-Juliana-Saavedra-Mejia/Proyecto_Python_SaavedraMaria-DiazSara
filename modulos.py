@@ -1,4 +1,3 @@
-
 import json
 def abrirJSON():
     with open('./json/camper.json','r') as openFile:
@@ -130,6 +129,23 @@ def inscripcion_camper():
 def breakpoint ():
      return
 
+def retirar_camper(campers, documento):
+    encontrado = False
+    for estudiante in campers:
+        if estudiante["ID"] == documento:
+            # Acceder al diccionario "Estado"
+            estados = estudiante["Estado"]
+            # Cambiar estado de "En proceso" a False
+            estados["En proceso"] = False
+            # Cambiar estado de "Retirado" a True
+            estados["Retirado"] = True
+            encontrado = True
+            print(f"El estudiante con ID {documento} ha sido retirado.")
+            break  # Salir del ciclo una vez que se encuentra el estudian
+        if not encontrado:
+            print(f"No se encontró un estudiante con ID {documento}.")
+        return campers   
+
 def trainerAgregarNotasp():
 
             print ("Estos son los campers de la clase P_1")
@@ -139,7 +155,6 @@ def trainerAgregarNotasp():
             print ("3. Otros")
             nota=int(input("Ingrese que nota quiere agregar: "))
             if nota==1:
-
                 trabajos=int(input("Digite la nota del trabajo: "))
             
 

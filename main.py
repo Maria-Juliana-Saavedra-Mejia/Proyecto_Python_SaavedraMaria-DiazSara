@@ -1,4 +1,4 @@
-from modulos import menu_principal, menu_trainer, menu_camper,inscripcion_camper, trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1, abrirJSON, abrirJSO
+from modulos import menu_principal, menu_trainer, menu_camper,inscripcion_camper, trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1, abrirJSON, abrirJSO, retirar_camper
 from defcoordinador import menu_coordinador, menu_coordinador_opc_1, agregartrainers, agregar_modulo_a_todos_salones
 import json
 
@@ -40,28 +40,12 @@ while booleanito:
                     
                     break  # Salir del ciclo una vez que se encuentra el estudiante
 
-            if not encontrado:
-                print("Estudiante con ese ID no encontrado.")
+                if not encontrado:
+                    print("Estudiante con ese ID no encontrado.")
 
-
-
-        elif opcioncam==3:
-            def retirar_camper(campers, documento):
-                encontrado = False
-                for estudiante in campers:
-                    if estudiante["ID"] == documento:
-            # Acceder al diccionario "Estado"
-                        estados = estudiante["Estado"]
-            # Cambiar estado de "En proceso" a False
-            estados["En proceso"] = False
-            # Cambiar estado de "Retirado" a True
-            estados["Retirado"] = True
-            encontrado = True
-            print(f"El estudiante con ID {documento} ha sido retirado.")
-            break  # Salir del ciclo una vez que se encuentra el estudiante
-    
-        if not encontrado:
-            print(f"No se encontró un estudiante con ID {documento}.")           
+        elif opcioncam == 3:
+            retirar_camper(campers, documento)
+                 
     elif opcion==2:
         menu_trainer()
         n1=int(input(": "))
@@ -194,6 +178,7 @@ while booleanito:
         elif opcionC == 2:
             agregartrainers()
         elif opcionC == 3:
-            # Llamada de la función
             nuevo_modulo = input("Ingrese el nombre del nuevo módulo a agregar a todos los salones: ")
             agregar_modulo_a_todos_salones(nuevo_modulo)
+        elif opcionC==4:
+            

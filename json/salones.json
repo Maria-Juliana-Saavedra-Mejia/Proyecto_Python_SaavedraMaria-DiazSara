@@ -11,14 +11,12 @@
                 "finalizacion : 10:00 am"
             ],
             "Ruta": "Java",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                     "Backend"
             ]
         },
         {
@@ -32,14 +30,12 @@
                 "finalizacion : 6:00 pm"
             ],
             "Ruta": "Java",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -53,14 +49,12 @@
                 "finalizacion : 10:00 am"
             ],
             "Ruta": "NodeJS",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -74,14 +68,12 @@
                 "finalizacion : 6:00 pm"
             ],
             "Ruta": "NodeJS",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -95,14 +87,12 @@
                 "finalizacion : 10:00 am"
             ],
             "Ruta": "Java",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -116,14 +106,12 @@
                 "finalizacion : 6:00 pm"
             ],
             "Ruta": "Java",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -137,14 +125,12 @@
                 "finalizacion : 2:00 pm"
             ],
             "Ruta": ".NET",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -158,14 +144,12 @@
                 "finalizacion : 2:00 pm"
             ],
             "Ruta": ".NET",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -179,14 +163,12 @@
                 "finalizacion : 10:00 pm"
             ],
             "Ruta": ".NET",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -200,14 +182,12 @@
                 "finalizacion : 10:00 pm"
             ],
             "Ruta": ".NET",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -221,14 +201,12 @@
                 "finalizacion : 2:00 pm"
             ],
             "Ruta": "NodeJS",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         },
         {
@@ -242,14 +220,12 @@
                 "finalizacion : 6:00 pm"
             ],
             "Ruta": ".NET",
-            "Campers": [],
             "Modulos": [
                 "Fundamentos de programación",
                 "Programacion Web",
                 "Programacion Formal",
                 "Base de datos",
-                "Backend",
-                "si"
+                "Backend"
             ]
         }
     ]

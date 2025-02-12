@@ -146,6 +146,31 @@ def agregar_modulo_a_todos_salones(nuevo_modulo):
     # Guardar los cambios
     guardarJSO(data)
 
+def modulo_matriculas():
+   campers = abrirJSON()  # Asegúrate de tener esta función para abrir el archivo JSON
+    for estudiante in campers:
+        estados = estudiante["Estado"]
+        if estados["Aprobado"] == True:
+            print(f"Estudiante: {estudiante['Nombre']} {estudiante['Apellido']} (ID: {estudiante['ID']})")
+            
+           
+            nota1 = float(input("Ingrese la nota teorica: "))
+            nota2 = float(input("Ingrese la nota practica: "))
+            
+            # Calcular el promedio de las notas
+            promedio = (nota1 + nota2) / 2
+            
+            # Verificar si el estudiante aprueba o rechaza
+            if promedio >= 60:
+                # Si aprueba, cambiar estado a Aprobado
+                estudiante["Estado"]["Aprobado"] = True
+                estudiante["Estado"]["Rechazado"] = False
+                print(f"El estudiante con ID {estudiante['ID']} ha aprobado.")
+            else:
+                # Si no aprueba, cambiar estado a Rechazado
+                estudiante["Estado"]["Aprobado"] = False
+                estudiante["Estado"]["Rechazado"] = True
+                print(f"El estudiante con ID {estudiante['ID']} ha sido rechazado.")
 
-def modulo_matricular():
-     
+    # Guardar los cambios en el JSON
+    guardarJSON(campers)  
