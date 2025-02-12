@@ -9,7 +9,7 @@
         "Numero de telefono fijo": 6123456789,
         "Estado": {
             "En proceso": false,
-            "Inscrito": false,
+            "Inscrito": true,
             "Aprobado": true,
             "Rechazado": false,
             "Cursando": false,
@@ -63,6 +63,34 @@
         "Acudiente": "a",
         "Numero de celular": 1,
         "Numero de telefono fijo": 1,
+        "Estado": {
+            "En proceso": false,
+            "Inscrito": true,
+            "Aprobado": true,
+            "Rechazado": false,
+            "Cursando": false,
+            "Graduado": false,
+            "Expulado": false,
+            "Retirado": false
+        },
+        "Riesgo": false,
+        "Curso": "",
+        "notas": {
+            "modulo1": 0.0,
+            "modulo2": 0.0,
+            "modulo3": 0.0,
+            "modulo4": 0.0,
+            "modulo5": 0.0
+        }
+    },
+    {
+        "ID": 1,
+        "Nombre": "dssd",
+        "Apellido": "dsds",
+        "Direccion": "ddsed",
+        "Acudiente": "dfsfs",
+        "Numero de celular": 43434,
+        "Numero de telefono fijo": 43435,
         "Estado": {
             "En proceso": false,
             "Inscrito": true,

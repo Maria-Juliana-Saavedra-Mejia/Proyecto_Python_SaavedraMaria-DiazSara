@@ -144,249 +144,443 @@ def retirar_camper(campers, documento):
             break  # Salir del ciclo una vez que se encuentra el estudian
         if not encontrado:
             print(f"No se encontró un estudiante con ID {documento}.")
-        return campers   
+     
+        return campers  
+     
+def trainerAgregarNotasp(camper, documento):
+    print ("Estos son los campers de la clase P_1")
+    # Mostrar lista de estudiantes en P_1
+    est=int(input("Digite el numero del camper al que le quiere ingresar una nota: "))
+    #Recorrer el id de los estudiantes en P_1
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota:"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
 
-def trainerAgregarNotasp():
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
 
-            print ("Estos son los campers de la clase P_1")
-            est=int(input("Digite el numero del camper al que le quiere ingresar una nota"))
-            print ("1. Trabajos")
-            print ("2. Proyectos")
-            print ("3. Otros")
-            nota=int(input("Ingrese que nota quiere agregar: "))
-            if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-            
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
 
-            
-            elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
 
-            elif nota==3:
-                otros=int(input("Digite la nota: "))
-
-            else:
-                print("Codigo incorrecto")
 
 def trainerAgregarNotasp1():
-            print ("Estos son los campers de la clase P_2")
-       
-            est=int(input("Digite el numero del camper al que le quiere ingresar una  nota"))
-            print ("1. para trabajos")
-            print ("2. para proyectos")
-            print ("3. para otros")
-            nota=int(input("Ingrese que nota quiere agregar: "))
-            if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-   
-            elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
-       
-            elif nota==3:
-                otros=int(input("Digite la nota: "))
-     
-            else:
-                print("Codigo incorrecto")
+    print ("Estos son los campers de la clase P_2")
+    est=int(input("Digite el numero del camper al que le quiere ingresar una nota"))
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
+
 
 def trainerAgregarNotasm():
-        print ("Estos son los estudiantes de la clase M_1")
-        ###imprimir la lista de esa clase con notas 
-        est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-        print ("1. para trabajos")
-        print ("2. para proyectos")
-        print ("3. para otros")
-        nota=int(input("Ingrese que nota quiere agregar: "))
+    print ("Estos son los estudiantes de la clase M_1")
+     ###imprimir la lista de esa clase con notas 
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
 
-        if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-         
-        elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
-         
-        elif nota==3:
-                otros=int(input("Digite la nota: "))
-         
-        else:
-             print("Codigo incorrecto")
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
 
 
 def trainerAgregarNotasm1():
-      print ("Estos son los estudiantes de la clase M_2")
+    print ("Estos son los estudiantes de la clase M_2")
       ###imprimir la lista de esa clase con notas 
-      est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-      print ("1. para trabajos")
-      print ("2. para proyectos")
-      print ("3. para otros")
-      nota=int(input("Ingrese que nota quiere agregar: "))
-      if nota==1:
-          trabajos=int(input("Digite la nota del trabajo: "))
-   
-      elif nota==2:
-          proyectos=int(input("Digite la nota del proyecto: "))
-   
-      elif nota==3:
-          otros=int(input("Digite la nota: "))
-   
-      else:
-       print("Codigo incorrecto")
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
 
 def trainerAgregarNotasJ():
-            print ("Estos son los estudiantes de la clase J_1")
+    print ("Estos son los estudiantes de la clase J_1")
             ###imprimir la lista de esa clase con notas 
-            est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-            print ("1. para trabajos")
-            print ("2. para proyectos")
-            print ("3. para otros")
-            nota=int(input("Ingrese que nota quiere agregar: "))
-            if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-          
-            elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
-         
-            elif nota==3:
-                 otros=int(input("Digite la nota: "))
-         
-            else:
-                    print("Codigo incorrecto")
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
      
 
 def trainerAgregarNotasJ1():
 
-            print ("Estos son los estudiantes de la clase J_2")
+    print ("Estos son los estudiantes de la clase J_2")
             ###imprimir la lista de esa clase con notas 
-            est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-            print ("1. para trabajos")
-            print ("2. para proyectos")
-            print ("3. para otros")
-            nota=int(input("Ingrese que nota quiere agregar: "))
-            if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-         
-            elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
-         
-            elif nota==3:
-                otros=int(input("Digite la nota: "))
-         
-            else:
-                    print("Codigo incorrecto")
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
 
 def trainerAgregarNotasS():
-            print ("Estos son los estudiantes de la clase S_1")
+    print ("Estos son los estudiantes de la clase S_1")
             ###imprimir la lista de esa clase con notas 
-            est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-            print ("1. para trabajos")
-            print ("2. para proyectos")
-            print ("3. para otros")
-            nota=int(input("Ingrese que nota quiere agregar: "))
-            if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-         
-            elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
-         
-            elif nota==3:
-                otros=int(input("Digite la nota: "))
-         
-            else:
-                print("Codigo incorrecto")
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
 def trainerAgregarNotasS1():
     print ("Estos son los estudiantes de la clase S_2")
             ###imprimir la lista de esa clase con notas 
-    est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-    print ("1. para trabajos")
-    print ("2. para proyectos")
-    print ("3. para otros")
-    nota=int(input("Ingrese que nota quiere agregar: "))
-    if nota==1:
-        trabajos=int(input("Digite la nota del trabajo: "))
-  
-    elif nota==2:
-        proyectos=int(input("Digite la nota del proyecto: "))
-  
-    elif nota==3:
-        otros=int(input("Digite la nota: "))
-  
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
     else:
         print("Codigo incorrecto")
 
 def trainerAgregarNotasC():
-            print ("Estos son los estudiantes de la clase C_1")
+    print ("Estos son los estudiantes de la clase C_1")
             ###imprimir la lista de esa clase con notas 
-            est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-            print ("1. para trabajos")
-            print ("2. para proyectos")
-            print ("3. para otros")
-            nota=int(input("Ingrese que nota quiere agregar: "))
-            if nota==1:
-                trabajos=int(input("Digite la nota del trabajo: "))
-         
-            elif nota==2:
-                proyectos=int(input("Digite la nota del proyecto: "))
-         
-            elif nota==3:
-                otros=int(input("Digite la nota: "))
-         
-            else:
-                print("Codigo incorrecto")
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
       
 def trainerAgregarNotasC1():
     print ("Estos son los estudiantes de la clase C_2")
     ###imprimir la lista de esa clase con notas 
-    est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-    print ("1. para trabajos")
-    print ("2. para proyectos")
-    print ("3. para otros")
-    nota=int(input("Ingrese que nota quiere agregar: "))
-    if nota==1:
-        trabajos=int(input("Digite la nota del trabajo: "))
- 
-    elif nota==2:
-        proyectos=int(input("Digite la nota del proyecto: "))
- 
-    elif nota==3:
-        otros=int(input("Digite la nota: "))
- 
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    else:
+        print("Codigo incorrecto")
+def trainerAgregarNotasA():
+    print ("Estos son los estudiantes de la clase A_1")
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
     else:
         print("Codigo incorrecto")
 
-def trainerAgregarNotasA():
-    print ("Estos son los estudiantes de la clase A_1")
 
-    est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-    print ("1. para trabajos")
-    print ("2. para proyectos")
-    print ("3. para otros")
-    nota=int(input("Ingrese que nota quiere agregar: "))
-    if nota==1:
-         trabajos=int(input("Digite la nota del trabajo: "))
- 
-    elif nota==2:
-         proyectos=int(input("Digite la nota del proyecto: "))
-
-    elif nota==3:
-         otros=int(input("Digite la nota: "))
-
-    else:
-         print("Codigo incorrecto")
 def trainerAgregarNotasA1():
     print ("Estos son los estudiantes de la clase A_2")
+    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
+    if estm==1:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    #Poner el promedio en el mudulo del estudiante
+    elif estm==2:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
 
-    est=int(input("Digite el numero del estudiante al que le quiere ingresar una nota"))
-    print ("1. para trabajos")
-    print ("2. para proyectos")
-    print ("3. para otros")
-    nota=int(input("Ingrese que nota quiere agregar: "))
-    if nota==1:
-         trabajos=int(input("Digite la nota del trabajo: "))
- 
-    elif nota==2:
-         proyectos=int(input("Digite la nota del proyecto: "))
+    elif estm==3:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
 
-    elif nota==3:
-         otros=int(input("Digite la nota: "))
-
+    elif estm==4:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+            
+    elif estm==5:
+        pt=int(input("Digite la nota de la prueba teorica: "))     
+        pp=int(input("Digite la nota del proyecto: "))
+        otros=int(input("Digite la nota de otros: "))
+        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
     else:
-         print("Codigo incorrecto")
+        print("Codigo incorrecto")
 

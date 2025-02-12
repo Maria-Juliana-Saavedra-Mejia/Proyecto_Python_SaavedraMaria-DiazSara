@@ -16,12 +16,6 @@ while booleanito:
             inscripcion_camper()
 
 
-
-
-
-
-
-
         elif opcioncam == 2:
             campers = abrirJSON() 
             documento = int(input("Digite su numero de identidad -> "))
@@ -31,17 +25,38 @@ while booleanito:
                     # Acceder al diccionario "Estado"
                     estados = estudiante["Estado"]
                     encontrado = True
+                    if not encontrado:
+                        print("Estudiante con ese ID no encontrado.")
 
                     # Revisar si "Aprobado" es True
                     if estados["Aprobado"]:  # Solo si Aprobado es True
+                        salones=abrirJSO
                         print(f"El estudiante con ID {documento} está aprobado.")
+                        modulo1 = estudiante["notas"]["modulo1"]
+                        modulo2 = estudiante["notas"]["modulo2"]
+                        modulo3 = estudiante["notas"]["modulo3"]
+                        modulo4 = estudiante["notas"]["modulo4"]
+                        modulo5 = estudiante["notas"]["modulo5"]
+                        print("Sus notas del modulo 1 son: ",{modulo1})
+                        print("Sus notas del modulo 2 son: ",{modulo2})
+                        print("Sus notas del modulo 3 son: ",{modulo3})
+                        print("Sus notas del modulo 4 son: ",{modulo4})
+                        print("Sus notas del modulo 5 son: ",{modulo5})
+                        r= (modulo1 + modulo2 + modulo3 + modulo4 + modulo5)/5
+                        if r<60:
+                            riesgo = estudiante["riesgo"]=True
+                            print("Su riesgo es alto")
+                        elif r>=60 and r<80:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es medio")
+                        elif r>=80:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es bajo")
+
                     else:
                         print(f"El estado de aprobación del estudiante con ID {documento} es False.")
                     
                     break  # Salir del ciclo una vez que se encuentra el estudiante
-
-                if not encontrado:
-                    print("Estudiante con ese ID no encontrado.")
 
         elif opcioncam == 3:
             retirar_camper(campers, documento)
@@ -181,4 +196,4 @@ while booleanito:
             nuevo_modulo = input("Ingrese el nombre del nuevo módulo a agregar a todos los salones: ")
             agregar_modulo_a_todos_salones(nuevo_modulo)
         elif opcionC==4:
-            
+            print("")
