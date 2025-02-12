@@ -84,49 +84,28 @@ def agregartrainers ():
                     "Ruta": rutan}
     if rutan=="Java":
                 newtrainer["Trainers"][salonn]["Modulos"]=[
-                "Introducción a la Programación",
-                "Python",
-                "HTML/CSS",
-                "Scrum",
-                "Git",
-                "JavaScript",
-                "Intro Back",
-                "Intro BBDD",
-                "MySQL",
-                "Java",
-                "PostgreSQL",
-                "SpringBoot" 
+                "Fundamentos de programación",
+                "Programacion Web",
+                "Programacion Formal",
+                "Base de datos",
+                "Backend" 
                 ] 
     elif rutan=="NodeJS":
-                newtrainer["Trainers"][salonn]={
-                "Modulos": [
-                "Introducción a la Programación",
-                "Python",
-                "HTML/CSS",
-                "Scrum",
-                "Git",
-                "JavaScript",
-                "Intro Back",
-                "Intro BBDD",
-                "MongoDB",
-                "MySQL",
-                "Express"
-            ]}
+                newtrainer["Trainers"][salonn]["Modulos"]=[
+                "Fundamentos de programación",
+                "Programacion Web",
+                "Programacion Formal",
+                "Base de datos",
+                "Backend"
+            ]
     elif rutan==".NET":
-                newtrainer["Trainers"][salonn]={
-                "Modulos": [
-                "Introducción a la Programación",
-                "Python",
-                "HTML/CSS",
-                "Scrum",
-                "Git",
-                "JavaScript",
-                "Intro Back",
-                "Intro BBDD",
-                "MongoDB",
-                "MySQL",
-                "Express"
-            ]}
+                newtrainer["Trainers"][salonn]["Modulos"]=[
+                "Fundamentos de programación",
+                "Programacion Web",
+                "Programacion Formal",
+                "Base de datos",
+                "Backend"
+            ]
 
     guardarJSON(newtrainer)
 

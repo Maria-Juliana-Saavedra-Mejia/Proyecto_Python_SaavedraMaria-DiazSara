@@ -1,4 +1,4 @@
-from modulos import menu_principal, menu_trainer, menu_camper,inscripcion_camper, trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1, abrirJSON, abrirJSO, retirar_camper
+from modulos import menu_principal, trainerVerHorarioA, trainerVerHorarioC, trainerVerHorarioM, trainerVerHorarioS, trainerVerHorarioJ, menu_trainer, menu_camper,inscripcion_camper, trainerVerHorarioP, trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1, abrirJSON, abrirJSO, retirar_camper
 from defcoordinador import menu_coordinador, menu_coordinador_opc_1, agregartrainers, agregar_modulo_a_todos_salones
 import json
 
@@ -38,20 +38,74 @@ while booleanito:
                         modulo4 = estudiante["notas"]["modulo4"]
                         modulo5 = estudiante["notas"]["modulo5"]
                         print("Sus notas del modulo 1 son: ",{modulo1})
-                        print("Sus notas del modulo 2 son: ",{modulo2})
-                        print("Sus notas del modulo 3 son: ",{modulo3})
-                        print("Sus notas del modulo 4 son: ",{modulo4})
-                        print("Sus notas del modulo 5 son: ",{modulo5})
-                        r= (modulo1 + modulo2 + modulo3 + modulo4 + modulo5)/5
-                        if r<60:
+                    
+                        if modulo1<60.0:
                             riesgo = estudiante["riesgo"]=True
-                            print("Su riesgo es alto")
-                        elif r>=60 and r<80:
+                            print("Su riesgo es alto en el primer modulo")
+                        elif modulo1>=60.0 and modulo1<80.0:
                             riesgo = estudiante["riesgo"]=False
-                            print("Su riesgo es medio")
-                        elif r>=80:
+                            print("Su riesgo es medio en el primer modulo")
+                        elif modulo1>=80.0:
                             riesgo = estudiante["riesgo"]=False
-                            print("Su riesgo es bajo")
+                            print("Su riesgo es bajo en el primer modulo")
+                        elif modulo1 == 0.0:
+                            print("Modulo no terminado")
+
+                        print("Sus notas del modulo 2 son: ",{modulo2})
+
+                        if modulo2<60.0:
+                            riesgo = estudiante["riesgo"]=True
+                            print("Su riesgo es alto en el segundo modulo")
+                        elif modulo2>=60.0 and modulo2<80.0:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es medio en el segundo modulo")
+                        elif modulo2>=80.0:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es bajo en el segundo modulo")
+                        elif modulo2 == 0.0:
+                            print("Modulo no terminado")
+
+                        print("Sus notas del modulo 3 son: ",{modulo3})
+
+                        if modulo3<60.0:
+                            riesgo = estudiante["riesgo"]=True
+                            print("Su riesgo es alto en el tercer modulo")
+                        elif modulo3>=60.0 and modulo3<80.0:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es medio en el tercer modulo")
+                        elif modulo3>=80.0:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es bajo en el tercer modulo")
+                        elif modulo3 == 0.0:
+                            print("Modulo no terminado")
+
+                        print("Sus notas del modulo 4 son: ",{modulo4})
+
+                        if modulo4<60.0:
+                            riesgo = estudiante["riesgo"]=True
+                            print("Su riesgo es alto en el cuarto modulo")
+                        elif modulo4>=60.0 and modulo4<80.0:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es medio en el cuarto modulo")
+                        elif modulo4>=80.0:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es bajo en el cuarto modulo")
+                        elif modulo4 == 0.0:
+                            print("Modulo no terminado")
+                            
+                        print("Sus notas del modulo 5 son: ",{modulo5})
+
+                        if modulo5<60.0:
+                            riesgo = estudiante["riesgo"]=True
+                            print("Su riesgo es alto en el quinto modulo")
+                        elif modulo5>=60.0 and modulo5<80.0:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es medio en el quinto modulo")
+                        elif modulo5>=80.0:
+                            riesgo = estudiante["riesgo"]=False
+                            print("Su riesgo es bajo en el quinto modulo")
+                        elif modulo5 == 0.0:
+                            print("Modulo no terminado")
 
                     else:
                         print(f"El estado de aprobación del estudiante con ID {documento} es False.")
@@ -77,7 +131,7 @@ while booleanito:
                 trainerAgregarNotasp1()
             elif clase==3:
                 print("")
-                ## imprimir horario y clases
+                trainerVerHorarioP()
             elif clase==4:
                 exit() 
             else:
@@ -96,7 +150,7 @@ while booleanito:
                 trainerAgregarNotasm1()
             elif clase==3:
                 print("")
-                ## imprimir horario y clases
+                trainerVerHorarioM()
             elif clase==4:
                 exit()  
             else:
@@ -115,8 +169,7 @@ while booleanito:
             elif clase==2:
                 trainerAgregarNotasJ1()
             elif clase==3:
-                print("")
-                ## imprimir horario y clases
+                trainerVerHorarioJ()
             elif clase==4:
                 exit()  
             else:
@@ -135,8 +188,7 @@ while booleanito:
             elif clase==2:
                 trainerAgregarNotasS1()
             elif clase==3:
-                print("")
-                ## imprimir horario y clases
+                trainerVerHorarioS()
             elif clase==4:
                 exit() 
             else:
@@ -155,8 +207,7 @@ while booleanito:
             elif clase==2:
                 trainerAgregarNotasC1()
             elif clase==3:
-                print("")
-                ## imprimir horario y clases
+                trainerVerHorarioC()
             elif clase==4:
                 exit() 
             else:
@@ -174,8 +225,7 @@ while booleanito:
             elif clase==2:
                 trainerAgregarNotasA1()
             elif clase==3:
-                print("")
-                ## imprimir horario y clases
+                trainerVerHorarioA()
             elif clase==4:
                 exit()  
             else:

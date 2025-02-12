@@ -147,7 +147,7 @@ def retirar_camper(campers, documento):
      
         return campers  
      
-def trainerAgregarNotasp(camper, documento):
+def trainerAgregarNotasp():
     print ("Estos son los campers de la clase P_1")
     # Mostrar lista de estudiantes en P_1
     est=int(input("Digite el numero del camper al que le quiere ingresar una nota: "))
@@ -184,6 +184,63 @@ def trainerAgregarNotasp(camper, documento):
         promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
     else:
         print("Codigo incorrecto")
+
+
+def trainerVerHorarioP():
+    grupop = ("P_1", "P_2")  
+    for salon in salones["salones"]:
+        if salon["grupo"] in grupop: 
+            print(f"Grupo: {salon['grupo']}")
+            print(f"Profesor: {salon['Profesor']}")
+            for horario in salon["Horario"]:
+                print(f"- {horario}")
+def trainerVerHorarioM():
+    grupop = ("M_1", "M_2")  
+    for salon in salones["salones"]:
+        if salon["grupo"] in grupop: 
+            print(f"Grupo: {salon['grupo']}")
+            print(f"Profesor: {salon['Profesor']}")
+            for horario in salon["Horario"]:
+                print(f"- {horario}")
+def trainerVerHorarioJ():
+    grupop = ("J_1", "J_2")  
+    for salon in salones["salones"]:
+        if salon["grupo"] in grupop: 
+            print(f"Grupo: {salon['grupo']}")
+            print(f"Profesor: {salon['Profesor']}")
+            for horario in salon["Horario"]:
+                print(f"- {horario}")
+def trainerVerHorarioS():
+    grupop = ("C_1", "C_2")  
+    for salon in salones["salones"]:
+        if salon["grupo"] in grupop: 
+            print(f"Grupo: {salon['grupo']}")
+            print(f"Profesor: {salon['Profesor']}")
+            for horario in salon["Horario"]:
+                print(f"- {horario}")
+
+def trainerVerHorarioC():
+    grupop = ("C_1", "C_2")  
+    for salon in salones["salones"]:
+        if salon["grupo"] in grupop: 
+            print(f"Grupo: {salon['grupo']}")
+            print(f"Profesor: {salon['Profesor']}")
+            for horario in salon["Horario"]:
+                print(f"- {horario}")
+def trainerVerHorarioA():
+    grupop = ("A_1", "A_2")  
+    for salon in salones["salones"]:
+        if salon["grupo"] in grupop: 
+            print(f"Grupo: {salon['grupo']}")
+            print(f"Profesor: {salon['Profesor']}")
+            for horario in salon["Horario"]:
+                print(f"- {horario}")
+
+
+
+
+
+
 
 
 
