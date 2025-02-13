@@ -17,8 +17,8 @@
             "Expulsado": false,
             "Retirado": false
         },
-        "Riesgo": false,
-        "grupo": "P_1",
+        "Riesgo": true,
+        "grupo": "P_2",
         "notas": {
             "modulo1": 15.533333333333333,
             "modulo2": 90.0,

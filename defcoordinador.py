@@ -117,8 +117,166 @@ def agregar_modulo_a_todos_salones(nuevo_modulo):
     # Guardar los cambios
     guardarJSO(data)
 
+
+
+def eliminar_modulos():
+    salones = abrirJSO()  
+    
+    print("Los grupos disponibles son:")
+    
+
+    for salon in salones:
+        print(f"Grupo: {salon['grupo']} - Salon: {salon['Salon']} - Módulos: {', '.join(salon.get('Modulos', ['No asignado']))}")
+
+
+    grupo_a_modificar = input("Ingrese el grupo (ej. J_1, P_1, etc.) del cual desea eliminar los módulos: ").strip()
+
+    grupo_encontrado = False
+    for salon in salones:
+        if salon["grupo"] == grupo_a_modificar:
+            grupo_encontrado = True
+            if "Modulos" in salon and salon["Modulos"]:
+                salon["Modulos"] = []  
+                print(f"Los módulos del grupo {grupo_a_modificar} han sido removidos (ahora es una lista vacía []).")
+            else:
+                print(f"El grupo {grupo_a_modificar} ya tenía el campo 'Modulos' vacío o no estaba asignado.")
+            break
+
+    if not grupo_encontrado:
+        print(f"No se encontró un grupo con el nombre {grupo_a_modificar}.")
+    else:
+        guardarJSO(salones)
+        print("Cambios guardados correctamente.")
+
+
+
+
+
+
+
+def mostrar_datos():
+    campers = abrirJSON()  
+    salones = abrirJSO()   
+    
+    print("\nOpciones de filtro:")
+    print("1. Inscritos")
+    print("2. Aprobados")
+    print("3. En riesgo")
+    print("4. Trainers")
+    
+    opcion = input("Seleccione una opción (1-4): ").strip()
+    nombres = set()  
+
+    if opcion == "1":
+        for camper in campers:
+            if camper["Estado"].get("Inscrito", False):
+                nombres.add(camper["Nombre"])
+        print("\nCampers Inscritos:")
+    elif opcion == "2":
+        for camper in campers:
+            if camper["Estado"].get("Aprobado", False):
+                nombres.add(camper["Nombre"])
+        print("\nCampers Aprobados:")
+    elif opcion == "3":
+        for camper in campers:
+            if camper.get("Riesgo", False):
+                nombres.add(camper["Nombre"])
+        print("\nCampers en Riesgo:")
+    elif opcion == "4":
+        for salon in salones:
+            if "Profesor" in salon:
+                nombres.add(salon["Profesor"])
+        print("\nLista de Trainers:")
+    else:
+        print("Opción no válida.")
+        return
+
+    if nombres:
+        for nombre in nombres:
+            print(f"- {nombre}")
+    else:
+        print("No hay registros que coincidan con el filtro seleccionado.")
+
+
+
+
+
+
+def asignar_grupo_estudiante():
+    estudiantes = abrirJSON()
+    salones = abrirJSO()
+    id_estudiante = int(input("Ingrese el ID del estudiante: "))
+    nuevo_grupo = input("Ingrese el grupo a asignar: ")
+    grupos_disponibles = [salon["grupo"] for salon in salones]
+    
+    if nuevo_grupo not in grupos_disponibles:
+        print("Error: El grupo ingresado no está disponible.")
+        return
+    
+    for estudiante in estudiantes:
+        if estudiante["ID"] == id_estudiante:
+            estudiante["grupo"] = nuevo_grupo
+            print(f"Grupo asignado correctamente a {estudiante['Nombre']} {estudiante['Apellido']}.")
+            guardarJSON(estudiantes)
+            return
+    
+    print("Error: No se encontró un estudiante con ese ID.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def reportes():
     campers=abrirJSON
 
     for i in range (campers+1):
         print
+
+def eliminarTrainers():
+    salones = abrirJSO()  # Cargar datos desde salones.json
+    
+    print("Los grupos disponibles son:")
+    
+    # Mostrar todos los grupos disponibles
+    for salon in salones:
+        print(f"Grupo: {salon['grupo']} - Salon: {salon['Salon']} - Profesor: {salon.get('Profesor', 'No asignado')}")
+
+    # Pedir al usuario el grupo que desea modificar
+    grupo_a_modificar = input("Ingrese el grupo (ej. J_1, P_1, etc.) del cual desea eliminar el profesor: ").strip()
+
+    # Buscar el grupo y actualizar el profesor a ""
+    grupo_encontrado = False
+    for salon in salones:
+        if salon["grupo"] == grupo_a_modificar:
+            grupo_encontrado = True
+            if "Profesor" in salon and salon["Profesor"]:
+                salon["Profesor"] = ""  # Asignar valor vacío en lugar de eliminar el campo
+                print(f"El profesor del grupo {grupo_a_modificar} ha sido removido (ahora es '').")
+            else:
+                print(f"El grupo {grupo_a_modificar} ya tenía el campo 'Profesor' vacío o no estaba asignado.")
+            break
+
+    # Si no se encuentra el grupo
+    if not grupo_encontrado:
+        print(f"No se encontró un grupo con el nombre {grupo_a_modificar}.")
+    else:
+        # Guardamos los cambios en el archivo
+        guardarJSO(salones)
+        print("Cambios guardados correctamente.")
+
+

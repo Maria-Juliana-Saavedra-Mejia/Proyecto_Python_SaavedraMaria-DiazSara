@@ -1,5 +1,5 @@
 from modulos import menu_principal, perfilCamper, trainerVerHorarioA, trainerVerHorarioC, trainerVerHorarioM, trainerVerHorarioS, trainerVerHorarioJ, menu_trainer, menu_camper,inscripcion_camper, trainerVerHorarioP, trainerAgregarNotasA,trainerAgregarNotasA1,trainerAgregarNotasC, trainerAgregarNotasC1, trainerAgregarNotasp, trainerAgregarNotasp1, trainerAgregarNotasm, trainerAgregarNotasm1,  trainerAgregarNotasS, trainerAgregarNotasS1, trainerAgregarNotasJ, trainerAgregarNotasJ1, abrirJSON, abrirJSO, retirar_camper
-from defcoordinador import menu_coordinador, menu_coordinador_opc_1, agregartrainers, agregar_modulo_a_todos_salones, reportes
+from defcoordinador import menu_coordinador, menu_coordinador_opc_1, agregartrainers, agregar_modulo_a_todos_salones, reportes, eliminar_modulos, eliminarTrainers, mostrar_datos, asignar_grupo_estudiante
 import json
 
 campers = abrirJSON()  
@@ -157,6 +157,13 @@ while booleanito:
             nuevo_modulo = input("Ingrese el nombre del nuevo módulo a agregar a todos los salones: ")
             agregar_modulo_a_todos_salones(nuevo_modulo)
         elif opcionC==4:
-            print("")
+            asignar_grupo_estudiante()
+        elif opcionC==5:
+            mostrar_datos()
+        elif opcionC==6:
+            eliminarTrainers()
+        elif opcionC==7:
+            eliminar_modulos()
+            
     elif opcion ==4:
         break
