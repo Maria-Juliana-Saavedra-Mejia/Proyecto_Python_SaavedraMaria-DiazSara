@@ -146,45 +146,125 @@ def retirar_camper(campers, documento):
             print(f"No se encontró un estudiante con ID {documento}.")
      
         return campers  
+    
+def perfilCamper():
+    campers = abrirJSON() 
+    documento = int(input("Digite su numero de identidad -> "))
+    encontrado = False  # Bandera para verificar si se encontró el estudiante
+    for estudiante in campers:
+        if estudiante["ID"] == documento:
+            # Acceder al diccionario "Estado"
+            estados = estudiante["Estado"]
+            encontrado = True
+            if not encontrado:
+                print("Estudiante con ese ID no encontrado.")
+
+            # Revisar si "Aprobado" es True
+            if estados["Aprobado"]:  # Solo si Aprobado es True
+                salones=abrirJSO()
+                print(f"El estudiante con ID {documento} está aprobado.")
+                grupo = estudiante["grupo"]
+                print("Su grupo es: ",grupo)
+                modulo1 = estudiante["notas"]["modulo1"]
+                modulo2 = estudiante["notas"]["modulo2"]
+                modulo3 = estudiante["notas"]["modulo3"]
+                modulo4 = estudiante["notas"]["modulo4"]
+                modulo5 = estudiante["notas"]["modulo5"]
+                
+                for pacos in salones: 
+                   
+                    if pacos["grupo"] == estudiante["grupo"]: 
+                        profesor = pacos["Profesor"]
+                        salon_nombre = pacos["Salon"]
+                        fecha_inicio = pacos["Fecha de inicio"]
+                        fecha_fin = pacos["Fecha de finalizacion"]
+                        horario = pacos["Horario"]                            
+                        modulos = pacos["Modulos"]
+                        ruta = pacos["Ruta"]                                 
+                            # Imprimir la información del salón y del estudiante
+                        print("Su profesor es:", profesor)
+                        print("Su salón es:", salon_nombre)
+                        print("Su fecha de inicio es:", fecha_inicio)
+                        print("Su fecha de finalización es:", fecha_fin)
+                        print("Su horario es:", horario)
+                        print("Su ruta es:", ruta)
+                        print("Sus módulos son:", modulos)
+
+                
+                print("Sus notas del modulo 1 son: ",{modulo1})
+                if modulo1<60.0 and modulo1>0:
+                    riesgo = estudiante["riesgo"]=True
+                    print("Su riesgo es alto en el primer modulo")
+                elif modulo1>=60.0 and modulo1<80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es medio en el primer modulo")
+                elif modulo1>=80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es bajo en el primer modulo")
+                elif modulo1 == 0.0:
+                    print("Modulo no terminado")
+
+                print("Sus notas del modulo 2 son: ",{modulo2})
+
+                if modulo2<60.0 and modulo2>0:
+                    riesgo = estudiante["riesgo"]=True
+                    print("Su riesgo es alto en el segundo modulo")
+                elif modulo2>=60.0 and modulo2<80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es medio en el segundo modulo")
+                elif modulo2>=80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es bajo en el segundo modulo")
+                elif modulo2 == 0.0:
+                    print("Modulo no terminado")
+
+                print("Sus notas del modulo 3 son: ",{modulo3})
+
+                if modulo3<60.0 and modulo3>0:
+                    riesgo = estudiante["riesgo"]=True
+                    print("Su riesgo es alto en el tercer modulo")
+                elif modulo3>=60.0 and modulo3<80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es medio en el tercer modulo")
+                elif modulo3>=80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es bajo en el tercer modulo")
+                elif modulo3 == 0.0:
+                    print("Modulo no terminado")
+
+                print("Sus notas del modulo 4 son: ",{modulo4})
+
+                if modulo4<60.0 and modulo4>0:
+                    riesgo = estudiante["riesgo"]=True
+                    print("Su riesgo es alto en el cuarto modulo")
+                elif modulo4>=60.0 and modulo4<80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es medio en el cuarto modulo")
+                elif modulo4>=80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es bajo en el cuarto modulo")
+                elif modulo4 == 0.0:
+                    print("Modulo no terminado")
+                    
+                print("Sus notas del modulo 5 son: ",{modulo5})
+
+                if modulo5<60.0 and modulo5>0:
+                    riesgo = estudiante["riesgo"]=True
+                    print("Su riesgo es alto en el quinto modulo")
+                elif modulo5>=60.0 and modulo5<80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es medio en el quinto modulo")
+                elif modulo5>=80.0:
+                    riesgo = estudiante["riesgo"]=False
+                    print("Su riesgo es bajo en el quinto modulo")
+                elif modulo5 == 0.0:
+                    print("Modulo no terminado")
+
+            else:
+                print(f"El estado de aprobación del estudiante con ID {documento} es False.")
+            
+            break  # Salir del ciclo una vez que se encuentra el estudiantes
      
-def trainerAgregarNotasp():
-    print ("Estos son los campers de la clase P_1")
-    # Mostrar lista de estudiantes en P_1
-    est=int(input("Digite el numero del camper al que le quiere ingresar una nota: "))
-    #Recorrer el id de los estudiantes en P_1
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota:"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-        
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    else:
-        print("Codigo incorrecto")
-
 
 def trainerVerHorarioP():
     grupop = ("P_1", "P_2")  
@@ -241,403 +321,370 @@ def trainerVerHorarioA():
 
 
 
-
-
-
-def trainerAgregarNotasp1():
-    print ("Estos son los campers de la clase P_2")
-    est=int(input("Digite el numero del camper al que le quiere ingresar una nota"))
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+def trainerAgregarNotasp(campers):
+    campers = abrirJSON() 
+    print("Estos son los campers de la clase P_1")
+    curso_especifico = "P_1"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
         
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
+            
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
 
 
-def trainerAgregarNotasm():
+
+
+def trainerAgregarNotasp1(campers):
+    campers = abrirJSON() 
+    print ("Estos son los campers de la clase P_2")
+    curso_especifico = "P_2"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
+            
+        guardarJSON(campers)
+    else:
+        print("Código incorrecto de módulo.")
+
+    
+
+
+
+
+def trainerAgregarNotasm(campers):
+    campers = abrirJSON() 
     print ("Estos son los estudiantes de la clase M_1")
-     ###imprimir la lista de esa clase con notas 
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "M_1"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
 
 
-def trainerAgregarNotasm1():
+def trainerAgregarNotasm1(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase M_2")
-      ###imprimir la lista de esa clase con notas 
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "M_2"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
 
-def trainerAgregarNotasJ():
+
+def trainerAgregarNotasJ(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase J_1")
-            ###imprimir la lista de esa clase con notas 
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "J_1"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
+
      
 
-def trainerAgregarNotasJ1():
-
+def trainerAgregarNotasJ1(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase J_2")
-            ###imprimir la lista de esa clase con notas 
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "J_2"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
 
-def trainerAgregarNotasS():
+
+def trainerAgregarNotasS(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase S_1")
-            ###imprimir la lista de esa clase con notas 
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "S_1"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
-def trainerAgregarNotasS1():
+        print("Código incorrecto de módulo.")
+
+
+
+def trainerAgregarNotasS1(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase S_2")
-            ###imprimir la lista de esa clase con notas 
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "S_2"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
 
-def trainerAgregarNotasC():
+
+
+def trainerAgregarNotasC(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase C_1")
-            ###imprimir la lista de esa clase con notas 
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "C_1"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
+
+
       
-def trainerAgregarNotasC1():
+def trainerAgregarNotasC1(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase C_2")
-    ###imprimir la lista de esa clase con notas 
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "C_2"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")  
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
-def trainerAgregarNotasA():
+        print("Código incorrecto de módulo.")
+
+
+def trainerAgregarNotasA(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase A_1")
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "A_2"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+    # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
 
 
-def trainerAgregarNotasA1():
+def trainerAgregarNotasA1(campers):
+    campers = abrirJSON()
     print ("Estos son los estudiantes de la clase A_2")
-    estm=int(input("Digite el numero del modulo al que quiere ingresar una nota"))
-    if estm==1:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-    #Poner el promedio en el mudulo del estudiante
-    elif estm==2:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==3:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
-
-    elif estm==4:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+    curso_especifico = "A_2"
+    filtro = list(filter(lambda camper: camper["grupo"] == curso_especifico, campers))
+    for camper in filtro:
+        print(f"{camper['Nombre']} {camper['Apellido']} - Grupo: {camper['grupo']} - ID: {camper['ID']}")
+    est = int(input("Digite el número del camper al que le quiere ingresar una nota: "))
+    estm = int(input("Digite el número del módulo al que quiere ingresar una nota: "))
+    if estm in range(1, 6):  
+        pt = int(input("Digite la nota de la prueba teórica: "))     
+        pp = int(input("Digite la nota del proyecto: "))
+        otros = int(input("Digite la nota de otros: "))
+        promedio = (pt * 0.3 + pp * 0.6 + otros * 0.1)/3
+        print(f"El promedio del módulo {estm} es: {promedio}")
+        # Actualizar la nota del camper
+        for camper in campers:
+            if camper["ID"] == est:
+                camper["notas"][f"modulo{estm}"] = promedio
+                print(f"Nota registrada para {camper['Nombre']} {camper['Apellido']}.")
+                break
+        else:
+            print("No se encontró un camper con ese ID.")
             
-    elif estm==5:
-        pt=int(input("Digite la nota de la prueba teorica: "))     
-        pp=int(input("Digite la nota del proyecto: "))
-        otros=int(input("Digite la nota de otros: "))
-        promedio=(pt*0.3)(pp*0.6)(otros*0.1)/3
+        guardarJSON(campers)
     else:
-        print("Codigo incorrecto")
+        print("Código incorrecto de módulo.")
+
 

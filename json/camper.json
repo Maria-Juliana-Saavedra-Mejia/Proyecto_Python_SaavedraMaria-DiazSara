@@ -18,10 +18,10 @@
             "Retirado": false
         },
         "Riesgo": false,
-        "Curso": "P_1",
+        "grupo": "P_1",
         "notas": {
-            "modulo1": 100.0,
-            "modulo2": 0.0,
+            "modulo1": 15.533333333333333,
+            "modulo2": 90.0,
             "modulo3": 0.0,
             "modulo4": 0.0,
             "modulo5": 0.0
@@ -46,7 +46,7 @@
             "Retirado": false
         },
         "Riesgo": false,
-        "Curso": "M_2",
+        "grupo": "M_2",
         "notas": {
             "modulo1": 100.0,
             "modulo2": 0.0,
@@ -74,7 +74,7 @@
             "Retirado": false
         },
         "Riesgo": false,
-        "Curso": "",
+        "grupo": "",
         "notas": {
             "modulo1": 0.0,
             "modulo2": 0.0,
@@ -102,7 +102,35 @@
             "Retirado": false
         },
         "Riesgo": false,
-        "Curso": "",
+        "grupo": "",
+        "notas": {
+            "modulo1": 0.0,
+            "modulo2": 0.0,
+            "modulo3": 0.0,
+            "modulo4": 0.0,
+            "modulo5": 0.0
+        }
+    },
+    {
+        "ID": 1234,
+        "Nombre": "Sara",
+        "Apellido": "Diaz",
+        "Direccion": "Cr 34",
+        "Acudiente": "Adriana Rodriguez",
+        "Numero de celular": 34567897,
+        "Numero de telefono fijo": 6543234567,
+        "Estado": {
+            "En proceso": false,
+            "Inscrito": true,
+            "Aprobado": false,
+            "Rechazado": false,
+            "Cursando": false,
+            "Graduado": false,
+            "Expulado": false,
+            "Retirado": false
+        },
+        "Riesgo": false,
+        "grupo": "",
         "notas": {
             "modulo1": 0.0,
             "modulo2": 0.0,
