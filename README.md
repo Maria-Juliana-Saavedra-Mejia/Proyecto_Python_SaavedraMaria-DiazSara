@@ -19,7 +19,7 @@ Para el correcto funcionamiento del presente se requiere la instalación de Pyth
 
 # **Explicación**
 
-> [** Main**]
+> [**Main**]
 Es la seccion en la que se encuentran importados los diferentes modulos creados y donde se ejecuta el programa.
 
 > [**Coordinador**]
